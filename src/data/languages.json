@@ -1,0 +1,90 @@
+[
+  {
+    "id": "hindi",
+    "name": "Hindi",
+    "state": "Uttar Pradesh",
+    "speakers": "528 Million",
+    "scriptSample": "नमस्ते",
+    "description": "An Indo-Aryan language spoken chiefly in North India, and serves as the lingua franca of the Hindi Belt."
+  },
+  {
+    "id": "bengali",
+    "name": "Bengali",
+    "state": "West Bengal",
+    "speakers": "97 Million",
+    "scriptSample": "নমস্কার",
+    "description": "An Indo-Aryan language native to the Bengal region of South Asia."
+  },
+  {
+    "id": "marathi",
+    "name": "Marathi",
+    "state": "Maharashtra",
+    "speakers": "83 Million",
+    "scriptSample": "नमस्कार",
+    "description": "An Indo-Aryan language spoken predominantly by the Marathi people of Maharashtra."
+  },
+  {
+    "id": "telugu",
+    "name": "Telugu",
+    "state": "Andhra Pradesh",
+    "speakers": "81 Million",
+    "scriptSample": "నమస్కారం",
+    "description": "A Dravidian language native to the Indian states of Andhra Pradesh and Telangana."
+  },
+  {
+    "id": "tamil",
+    "name": "Tamil",
+    "state": "Tamil Nadu",
+    "speakers": "69 Million",
+    "scriptSample": "வணக்கம்",
+    "description": "A Dravidian language natively spoken by the Tamil people of South Asia."
+  },
+  {
+    "id": "gujarati",
+    "name": "Gujarati",
+    "state": "Gujarat",
+    "speakers": "55 Million",
+    "scriptSample": "નમસ્તે",
+    "description": "An Indo-Aryan language native to the Indian state of Gujarat."
+  },
+  {
+    "id": "urdu",
+    "name": "Urdu",
+    "state": "Delhi",
+    "speakers": "50 Million",
+    "scriptSample": "آداب",
+    "description": "An Indo-Aryan language spoken chiefly in South Asia."
+  },
+  {
+    "id": "kannada",
+    "name": "Kannada",
+    "state": "Karnataka",
+    "speakers": "43 Million",
+    "scriptSample": "ನಮಸ್ಕಾರ",
+    "description": "A Dravidian language spoken predominantly by the people of Karnataka."
+  },
+  {
+    "id": "odia",
+    "name": "Odia",
+    "state": "Odisha",
+    "speakers": "34 Million",
+    "scriptSample": "ନମସ୍କାର",
+    "description": "An Indo-Aryan language spoken in the Indian state of Odisha."
+  },
+  {
+    "id": "malayalam",
+    "name": "Malayalam",
+    "state": "Kerala",
+    "speakers": "33 Million",
+    "scriptSample": "നമസ്കാരം",
+    "description": "A Dravidian language spoken in the Indian state of Kerala."
+  },
+  {
+    "id": "punjabi",
+    "name": "Punjabi",
+    "state": "Punjab",
+    "speakers": "33 Million",
+    "scriptSample": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ",
+    "description": "An Indo-Aryan language with origins in the Punjab region of the Indian subcontinent."
+  }
+]

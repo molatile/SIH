@@ -1,14 +1,14 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Map, BookOpen, Palette, MessageCircle, Calendar, Utensils } from 'lucide-react';
+import { Map, Palette, MessageCircle, Calendar, Utensils, Music, Shirt } from 'lucide-react';
 
 const CATEGORIES = [
-  { name: 'States', path: '/states', icon: Map, desc: 'Explore the 28 states and 8 union territories.', img: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800' },
-  { name: 'History', path: '/history', icon: BookOpen, desc: 'Journey through thousands of years of civilization.', img: 'https://images.unsplash.com/photo-1585136002706-b5930b533db0?auto=format&fit=crop&q=80&w=800' },
-  { name: 'Arts & Culture', path: '/arts', icon: Palette, desc: 'Discover classical dances, music, and crafts.', img: 'https://images.unsplash.com/photo-1605809795123-5e9dbd63251c?auto=format&fit=crop&q=80&w=800' },
+  { name: 'Dance', path: '/dance', icon: Music, desc: 'Discover classical and folk dances of India.', img: 'https://images.unsplash.com/photo-1605809795123-5e9dbd63251c?auto=format&fit=crop&q=80&w=800' },
+  { name: 'Painting', path: '/painting', icon: Palette, desc: 'Explore traditional arts and vibrant paintings.', img: 'https://images.unsplash.com/photo-1585136002706-b5930b533db0?auto=format&fit=crop&q=80&w=800' },
   { name: 'Languages', path: '/languages', icon: MessageCircle, desc: 'Dive into the linguistic diversity of India.', img: 'https://images.unsplash.com/photo-1582201943021-e8e5b61405e3?auto=format&fit=crop&q=80&w=800' },
+  { name: 'Food', path: '/food', icon: Utensils, desc: 'Taste the rich and diverse flavors across regions.', img: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&q=80&w=800' },
+  { name: 'Clothes', path: '/clothes', icon: Shirt, desc: 'Discover the vibrant textiles and traditional attire.', img: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800' },
   { name: 'Festivals', path: '/festivals', icon: Calendar, desc: 'Celebrate the vibrant festivals of the subcontinent.', img: 'https://images.unsplash.com/photo-1514222134-b57cbf8ce673?auto=format&fit=crop&q=80&w=800' },
-  { name: 'Cuisine', path: '/cuisine', icon: Utensils, desc: 'Taste the rich and diverse flavors across regions.', img: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&q=80&w=800' },
 ];
 
 export default function Home() {
@@ -57,7 +57,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Link to="/states" className="btn-primary text-lg inline-flex items-center gap-2">
+            <Link to="/languages" className="btn-primary text-lg inline-flex items-center gap-2">
               Start Exploring <Map className="w-5 h-5" />
             </Link>
           </motion.div>

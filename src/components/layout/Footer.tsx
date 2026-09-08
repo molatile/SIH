@@ -32,18 +32,18 @@ export default function Footer() {
           <div>
             <h4 className="font-yatra text-xl text-saffron mb-4">Explore</h4>
             <ul className="space-y-3">
-              <li><Link to="/states" className="text-ivory/80 hover:text-saffron transition-colors">States</Link></li>
-              <li><Link to="/history" className="text-ivory/80 hover:text-saffron transition-colors">History</Link></li>
-              <li><Link to="/arts" className="text-ivory/80 hover:text-saffron transition-colors">Arts & Culture</Link></li>
+              <li><Link to="/dance" className="text-ivory/80 hover:text-saffron transition-colors">Dance</Link></li>
+              <li><Link to="/painting" className="text-ivory/80 hover:text-saffron transition-colors">Painting</Link></li>
               <li><Link to="/languages" className="text-ivory/80 hover:text-saffron transition-colors">Languages</Link></li>
+              <li><Link to="/food" className="text-ivory/80 hover:text-saffron transition-colors">Food</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-yatra text-xl text-saffron mb-4">More</h4>
             <ul className="space-y-3">
+              <li><Link to="/clothes" className="text-ivory/80 hover:text-saffron transition-colors">Clothes</Link></li>
               <li><Link to="/festivals" className="text-ivory/80 hover:text-saffron transition-colors">Festivals</Link></li>
-              <li><Link to="/cuisine" className="text-ivory/80 hover:text-saffron transition-colors">Cuisine</Link></li>
               <li><a href="#" className="text-ivory/80 hover:text-saffron transition-colors">About Us</a></li>
               <li><a href="#" className="text-ivory/80 hover:text-saffron transition-colors">Contact</a></li>
             </ul>

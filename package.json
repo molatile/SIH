@@ -12,6 +12,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
+    "@types/react-simple-maps": "^3.0.6",
     "@vitejs/plugin-react": "^6.1.1",
     "autoprefixer": "^10.5.5",
     "postcss": "^8.5.28",
@@ -20,10 +21,13 @@
     "vite": "^8.2.2"
   },
   "dependencies": {
+    "@types/d3-geo": "^3.1.1",
+    "d3-geo": "^3.1.1",
     "framer-motion": "^13.2.0",
     "lucide-react": "^1.43.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-router-dom": "^7.18.3"
+    "react-router-dom": "^7.18.3",
+    "react-simple-maps": "^3.0.0"
   }
 }

@@ -5,12 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const NAV_LINKS = [
   { name: 'Home', path: '/' },
-  { name: 'States', path: '/states' },
-  { name: 'History', path: '/history' },
-  { name: 'Arts', path: '/arts' },
+  { name: 'Dance', path: '/dance' },
+  { name: 'Painting', path: '/painting' },
   { name: 'Languages', path: '/languages' },
+  { name: 'Food', path: '/food' },
+  { name: 'Clothes', path: '/clothes' },
   { name: 'Festivals', path: '/festivals' },
-  { name: 'Cuisine', path: '/cuisine' },
 ];
 
 export default function Navbar() {
