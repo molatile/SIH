@@ -4,7 +4,7 @@ import { Map, Palette, MessageCircle, Calendar, Utensils, Music, Shirt } from 'l
 
 const CATEGORIES = [
   { name: 'Dance', path: '/dance', icon: Music, desc: 'Discover classical and folk dances of India.', img: 'https://images.unsplash.com/photo-1605809795123-5e9dbd63251c?auto=format&fit=crop&q=80&w=800' },
-  { name: 'Painting', path: '/painting', icon: Palette, desc: 'Explore traditional arts and vibrant paintings.', img: 'https://images.unsplash.com/photo-1585136002706-b5930b533db0?auto=format&fit=crop&q=80&w=800' },
+  { name: 'Painting', path: '/painting', icon: Palette, desc: 'Explore traditional arts and vibrant paintings.', img: '/art/pattachitra-odisha.jpeg' },
   { name: 'Languages', path: '/languages', icon: MessageCircle, desc: 'Dive into the linguistic diversity of India.', img: 'https://images.unsplash.com/photo-1582201943021-e8e5b61405e3?auto=format&fit=crop&q=80&w=800' },
   { name: 'Food', path: '/food', icon: Utensils, desc: 'Taste the rich and diverse flavors across regions.', img: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&q=80&w=800' },
   { name: 'Clothes', path: '/clothes', icon: Shirt, desc: 'Discover the vibrant textiles and traditional attire.', img: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800' },
