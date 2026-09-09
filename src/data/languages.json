@@ -5,7 +5,8 @@
     "state": "Uttar Pradesh",
     "speakers": "528 Million",
     "scriptSample": "नमस्ते",
-    "description": "An Indo-Aryan language spoken chiefly in North India, and serves as the lingua franca of the Hindi Belt."
+    "description": "An Indo-Aryan language spoken chiefly in North India, and serves as the lingua franca of the Hindi Belt.",
+    "thumbnail": "/lang/hindi.jpeg"
   },
   {
     "id": "bengali",
@@ -13,7 +14,8 @@
     "state": "West Bengal",
     "speakers": "97 Million",
     "scriptSample": "নমস্কার",
-    "description": "An Indo-Aryan language native to the Bengal region of South Asia."
+    "description": "An Indo-Aryan language native to the Bengal region of South Asia.",
+    "thumbnail": "/lang/bengali.jpeg"
   },
   {
     "id": "marathi",
@@ -21,7 +23,8 @@
     "state": "Maharashtra",
     "speakers": "83 Million",
     "scriptSample": "नमस्कार",
-    "description": "An Indo-Aryan language spoken predominantly by the Marathi people of Maharashtra."
+    "description": "An Indo-Aryan language spoken predominantly by the Marathi people of Maharashtra.",
+    "thumbnail": "/lang/marathi.jpeg"
   },
   {
     "id": "telugu",
@@ -29,7 +32,8 @@
     "state": "Andhra Pradesh",
     "speakers": "81 Million",
     "scriptSample": "నమస్కారం",
-    "description": "A Dravidian language native to the Indian states of Andhra Pradesh and Telangana."
+    "description": "A Dravidian language native to the Indian states of Andhra Pradesh and Telangana.",
+    "thumbnail": "/lang/telugu.jpeg"
   },
   {
     "id": "tamil",
@@ -37,7 +41,8 @@
     "state": "Tamil Nadu",
     "speakers": "69 Million",
     "scriptSample": "வணக்கம்",
-    "description": "A Dravidian language natively spoken by the Tamil people of South Asia."
+    "description": "A Dravidian language natively spoken by the Tamil people of South Asia.",
+    "thumbnail": "/lang/tamil.jpeg"
   },
   {
     "id": "gujarati",
@@ -45,7 +50,8 @@
     "state": "Gujarat",
     "speakers": "55 Million",
     "scriptSample": "નમસ્તે",
-    "description": "An Indo-Aryan language native to the Indian state of Gujarat."
+    "description": "An Indo-Aryan language native to the Indian state of Gujarat.",
+    "thumbnail": "/lang/gujarati.jpeg"
   },
   {
     "id": "urdu",
@@ -53,7 +59,8 @@
     "state": "Delhi",
     "speakers": "50 Million",
     "scriptSample": "آداب",
-    "description": "An Indo-Aryan language spoken chiefly in South Asia."
+    "description": "An Indo-Aryan language spoken chiefly in South Asia.",
+    "thumbnail": "/lang/urdu.jpeg"
   },
   {
     "id": "kannada",
@@ -61,7 +68,8 @@
     "state": "Karnataka",
     "speakers": "43 Million",
     "scriptSample": "ನಮಸ್ಕಾರ",
-    "description": "A Dravidian language spoken predominantly by the people of Karnataka."
+    "description": "A Dravidian language spoken predominantly by the people of Karnataka.",
+    "thumbnail": "/lang/kannada.jpeg"
   },
   {
     "id": "odia",
@@ -69,7 +77,8 @@
     "state": "Odisha",
     "speakers": "34 Million",
     "scriptSample": "ନମସ୍କାର",
-    "description": "An Indo-Aryan language spoken in the Indian state of Odisha."
+    "description": "An Indo-Aryan language spoken in the Indian state of Odisha.",
+    "thumbnail": "/lang/odia.jpeg"
   },
   {
     "id": "malayalam",
@@ -77,7 +86,8 @@
     "state": "Kerala",
     "speakers": "33 Million",
     "scriptSample": "നമസ്കാരം",
-    "description": "A Dravidian language spoken in the Indian state of Kerala."
+    "description": "A Dravidian language spoken in the Indian state of Kerala.",
+    "thumbnail": "/lang/malayalam.jpeg"
   },
   {
     "id": "punjabi",
@@ -85,7 +95,8 @@
     "state": "Punjab",
     "speakers": "33 Million",
     "scriptSample": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ",
-    "description": "An Indo-Aryan language with origins in the Punjab region of the Indian subcontinent."
+    "description": "An Indo-Aryan language with origins in the Punjab region of the Indian subcontinent.",
+    "thumbnail": "/lang/punjabi.jpeg"
   },
   {
     "id": "bhojpuri",
@@ -93,7 +104,8 @@
     "state": "Bihar",
     "speakers": "50 Million",
     "scriptSample": "प्रणाम",
-    "description": "An Indo-Aryan language spoken in the Bhojpur-Purvanchal region of India and the Terai region of Nepal."
+    "description": "An Indo-Aryan language spoken in the Bhojpur-Purvanchal region of India and the Terai region of Nepal.",
+    "thumbnail": "/lang/bhojpuri.jpeg"
   },
   {
     "id": "maithili",
@@ -101,6 +113,7 @@
     "state": "Bihar",
     "speakers": "34 Million",
     "scriptSample": "प्रणाम",
-    "description": "An Indo-Aryan language spoken in the Mithila region of India and Nepal."
+    "description": "An Indo-Aryan language spoken in the Mithila region of India and Nepal.",
+    "thumbnail": "/lang/maithili.jpeg"
   }
 ]

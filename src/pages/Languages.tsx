@@ -13,6 +13,7 @@ interface Language {
   speakers: string;
   scriptSample: string;
   description: string;
+  thumbnail?: string;
 }
 
 interface StateInfo {
@@ -164,6 +165,11 @@ const Languages = () => {
                           <p className="text-3xl text-saffron">{lang.scriptSample}</p>
                         </div>
                       </div>
+                      {lang.thumbnail && (
+                        <div className="mb-4 rounded-xl overflow-hidden shadow-md">
+                          <img src={lang.thumbnail} alt={`${lang.name} language thumbnail`} className="w-full h-48 object-cover" />
+                        </div>
+                      )}
                       <div className="prose prose-indigo">
                         <p className="text-lg leading-relaxed text-indigo/80">
                           {lang.description}
