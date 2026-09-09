@@ -3,6 +3,7 @@ import Layout from './components/layout/Layout';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Languages from './pages/Languages';
+import Dance from './pages/Dance';
 
 // Placeholder components for other routes
 const Placeholder = ({ title }: { title: string }) => (
@@ -18,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="dance" element={<Placeholder title="Dance" />} />
+          <Route path="dance" element={<Dance />} />
           <Route path="painting" element={<Placeholder title="Painting" />} />
           <Route path="languages" element={<Languages />} />
           <Route path="food" element={<Placeholder title="Food" />} />

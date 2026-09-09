@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Bharatnatyam",
+    "state": "Tamil Nadu",
+    "video": "/dance-video/bharatnatyam-Tamil nadu.mp4"
+  },
+  {
+    "id": 2,
+    "name": "Bihu",
+    "state": "Assam",
+    "video": "/dance-video/bihu-assam.mp4"
+  },
+  {
+    "id": 3,
+    "name": "Bona Tribal Dance",
+    "state": "Odisha",
+    "video": "/dance-video/Bona tribal dance-odisha.mp4"
+  },
+  {
+    "id": 4,
+    "name": "Ghoomar",
+    "state": "Rajasthan",
+    "video": "/dance-video/ghoomar-rajasthan.mp4"
+  },
+  {
+    "id": 5,
+    "name": "Jijhiya",
+    "state": "Mithila, Bihar",
+    "video": "/dance-video/jijhiya-mithila.mp4"
+  },
+  {
+    "id": 6,
+    "name": "Kathakali",
+    "state": "Kerala",
+    "video": "/dance-video/kathakali-kerela.mp4"
+  },
+  {
+    "id": 7,
+    "name": "Kuchipudi",
+    "state": "Andhra Pradesh",
+    "video": "/dance-video/kuchipudi-Anhra pradesh.mp4"
+  },
+  {
+    "id": 8,
+    "name": "Lavani",
+    "state": "Maharashtra",
+    "video": "/dance-video/lavni-maharastra.mp4"
+  },
+  {
+    "id": 9,
+    "name": "Odissi",
+    "state": "Odisha",
+    "video": "/dance-video/odissi-odisha.mp4"
+  }
+]
