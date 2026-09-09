@@ -86,5 +86,21 @@
     "speakers": "33 Million",
     "scriptSample": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ",
     "description": "An Indo-Aryan language with origins in the Punjab region of the Indian subcontinent."
+  },
+  {
+    "id": "bhojpuri",
+    "name": "Bhojpuri",
+    "state": "Bihar",
+    "speakers": "50 Million",
+    "scriptSample": "प्रणाम",
+    "description": "An Indo-Aryan language spoken in the Bhojpur-Purvanchal region of India and the Terai region of Nepal."
+  },
+  {
+    "id": "maithili",
+    "name": "Maithili",
+    "state": "Bihar",
+    "speakers": "34 Million",
+    "scriptSample": "प्रणाम",
+    "description": "An Indo-Aryan language spoken in the Mithila region of India and Nepal."
   }
 ]

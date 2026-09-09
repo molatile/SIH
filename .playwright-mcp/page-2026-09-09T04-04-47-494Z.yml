@@ -1,0 +1,76 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "IncredibleIndia" [ref=e7] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e12]:
+        - link "Home" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - link "Dance" [ref=e14] [cursor=pointer]:
+          - /url: /dance
+        - link "Painting" [ref=e15] [cursor=pointer]:
+          - /url: /painting
+        - link "Languages" [ref=e16] [cursor=pointer]:
+          - /url: /languages
+        - link "Food" [ref=e17] [cursor=pointer]:
+          - /url: /food
+        - link "Clothes" [ref=e18] [cursor=pointer]:
+          - /url: /clothes
+        - link "Festivals" [ref=e19] [cursor=pointer]:
+          - /url: /festivals
+  - main [ref=e20]:
+    - generic [ref=e23]:
+      - heading "Linguistic Map of India" [level=2] [ref=e24]
+      - img [ref=e25]:
+        - generic [ref=e65] [cursor=pointer]
+  - contentinfo [ref=e66]:
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - link "IncredibleIndia" [ref=e70] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e75]: Discover the rich heritage, vibrant culture, diverse languages, and stunning landscapes of India. A journey through a land of endless possibilities.
+          - generic [ref=e76]:
+            - link [ref=e77] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=e84] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=e89] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e93]:
+          - heading "Explore" [level=4] [ref=e94]
+          - list [ref=e95]:
+            - listitem [ref=e96]:
+              - link "Dance" [ref=e97] [cursor=pointer]:
+                - /url: /dance
+            - listitem [ref=e98]:
+              - link "Painting" [ref=e99] [cursor=pointer]:
+                - /url: /painting
+            - listitem [ref=e100]:
+              - link "Languages" [ref=e101] [cursor=pointer]:
+                - /url: /languages
+            - listitem [ref=e102]:
+              - link "Food" [ref=e103] [cursor=pointer]:
+                - /url: /food
+        - generic [ref=e104]:
+          - heading "More" [level=4] [ref=e105]
+          - list [ref=e106]:
+            - listitem [ref=e107]:
+              - link "Clothes" [ref=e108] [cursor=pointer]:
+                - /url: /clothes
+            - listitem [ref=e109]:
+              - link "Festivals" [ref=e110] [cursor=pointer]:
+                - /url: /festivals
+            - listitem [ref=e111]:
+              - link "About Us" [ref=e112] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e113]:
+              - link "Contact" [ref=e114] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e115]:
+        - paragraph [ref=e116]: © 2026 IncredibleIndia. All rights reserved.
+        - generic [ref=e117]:
+          - link "Privacy Policy" [ref=e118] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=e119] [cursor=pointer]:
+            - /url: "#"
