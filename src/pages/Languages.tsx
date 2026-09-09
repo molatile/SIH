@@ -48,18 +48,21 @@ const Languages = () => {
     <div className="pt-24 min-h-screen flex flex-col md:flex-row relative bg-ivory overflow-hidden">
       {/* Map Section */}
       <div className={`w-full transition-all duration-500 ease-in-out ${selectedStateInfo && !isMobile ? 'md:w-2/3' : 'md:w-full'} flex items-center justify-center p-4 min-h-[50vh]`}>
-        <div className="w-full h-[60vh] md:h-[80vh] bg-indigo/5 rounded-3xl overflow-hidden border border-indigo/10 shadow-lg relative">
-          <h2 className="absolute top-6 left-1/2 -translate-x-1/2 text-2xl md:text-3xl font-yatra text-indigo z-10 whitespace-nowrap bg-ivory/80 px-6 py-2 rounded-full backdrop-blur-sm border border-indigo/10">
-            Linguistic Map of India
-          </h2>
-          <ComposableMap
-            projection="geoMercator"
-            projectionConfig={{
-              scale: 1000,
-              center: [82.5, 22.5]
-            }}
-            className="w-full h-full outline-none"
-          >
+        <div className="w-full h-[60vh] md:h-[80vh] bg-indigo/5 rounded-3xl overflow-hidden border border-indigo/10 shadow-lg flex flex-col relative">
+          <div className="pt-6 pb-2 flex justify-center w-full z-10">
+            <h2 className="text-2xl md:text-3xl font-yatra text-indigo whitespace-nowrap bg-ivory/80 px-6 py-2 rounded-full backdrop-blur-sm border border-indigo/10 shadow-sm">
+              Linguistic Map of India
+            </h2>
+          </div>
+          <div className="flex-1 w-full relative min-h-0">
+            <ComposableMap
+              projection="geoMercator"
+              projectionConfig={{
+                scale: 1000,
+                center: [82.5, 22.5]
+              }}
+              className="w-full h-full outline-none absolute inset-0"
+            >
             <ZoomableGroup 
               zoom={position.zoom} 
               center={position.coordinates} 
@@ -108,6 +111,7 @@ const Languages = () => {
               </Geographies>
             </ZoomableGroup>
           </ComposableMap>
+          </div>
         </div>
       </div>
 
@@ -119,10 +123,11 @@ const Languages = () => {
             animate={{ opacity: 1, x: 0, y: 0 }}
             exit={{ opacity: 0, x: isMobile ? 0 : 300, y: isMobile ? 300 : 0 }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className={`${isMobile ? 'w-full fixed bottom-0 left-0 z-50 rounded-t-3xl border-t' : 'w-1/3 static border-l'} bg-ivory border-indigo/10 shadow-2xl overflow-y-auto`}
+            className={`${isMobile ? 'w-full fixed bottom-0 left-0 z-50 rounded-t-3xl border-t bg-ivory border-indigo/10 shadow-2xl overflow-y-auto' : 'w-1/3 py-4 pr-4 pl-0 flex items-center justify-center'}`}
             style={{ maxHeight: isMobile ? '70vh' : 'auto' }}
           >
-            <div className="p-8 relative min-h-full flex flex-col">
+            <div className={`${isMobile ? 'w-full h-full' : 'w-full h-[60vh] md:h-[80vh] bg-ivory rounded-3xl border border-indigo/10 shadow-2xl overflow-y-auto'}`}>
+              <div className="p-8 relative min-h-full flex flex-col">
               <button 
                 onClick={() => {
                   setSelectedStateInfo(null);
@@ -187,6 +192,7 @@ const Languages = () => {
                   Contribute Data for {selectedStateInfo.stateName}
                 </button>
               </div>
+            </div>
             </div>
           </motion.div>
         )}
