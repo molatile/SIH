@@ -11,7 +11,7 @@ export default function PaintingDetail() {
   const [currentUrl, setCurrentUrl] = useState('');
 
   useEffect(() => {
-    setCurrentUrl(window.location.href);
+    setCurrentUrl(`https://sih-two-lyart.vercel.app/painting/${id}`);
   }, [id]);
 
   if (!painting) {
