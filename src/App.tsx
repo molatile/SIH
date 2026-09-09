@@ -4,6 +4,8 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Languages from './pages/Languages';
 import Dance from './pages/Dance';
+import Painting from './pages/Painting';
+import PaintingDetail from './pages/PaintingDetail';
 
 // Placeholder components for other routes
 const Placeholder = ({ title }: { title: string }) => (
@@ -20,7 +22,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="dance" element={<Dance />} />
-          <Route path="painting" element={<Placeholder title="Painting" />} />
+          <Route path="painting" element={<Painting />} />
+          <Route path="painting/:id" element={<PaintingDetail />} />
           <Route path="languages" element={<Languages />} />
           <Route path="food" element={<Placeholder title="Food" />} />
           <Route path="clothes" element={<Placeholder title="Clothes" />} />
