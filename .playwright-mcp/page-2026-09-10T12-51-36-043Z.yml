@@ -1,0 +1,106 @@
+- generic [ref=f6e3]:
+  - banner [ref=f6e4]:
+    - generic [ref=f6e6]:
+      - link "IncredibleIndia" [ref=f6e7] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=f6e12]:
+        - link "Home" [ref=f6e13] [cursor=pointer]:
+          - /url: /
+        - link "Dance" [ref=f6e14] [cursor=pointer]:
+          - /url: /dance
+        - link "Painting" [ref=f6e15] [cursor=pointer]:
+          - /url: /painting
+        - link "Languages" [ref=f6e16] [cursor=pointer]:
+          - /url: /languages
+        - link "Food" [ref=f6e17] [cursor=pointer]:
+          - /url: /food
+        - link "Clothes" [ref=f6e18] [cursor=pointer]:
+          - /url: /clothes
+        - link "Festivals" [ref=f6e19] [cursor=pointer]:
+          - /url: /festivals
+  - main [ref=f6e20]:
+    - generic [ref=f6e21]:
+      - heading "Linguistic Map of India" [level=2] [ref=f6e26]
+      - generic [ref=f6e32]:
+        - generic [ref=f6e40]:
+          - heading "AI Cultural Translator" [level=2] [ref=f6e41]
+          - paragraph [ref=f6e42]: Translate any text into India's diverse languages using AI.
+        - generic [ref=f6e43]:
+          - generic [ref=f6e44]:
+            - generic [ref=f6e45]: Enter Text
+            - textbox "Type something to translate..." [ref=f6e46]
+          - generic [ref=f6e47]:
+            - combobox [ref=f6e48] [cursor=pointer]:
+              - option "Hindi" [selected]
+              - option "Bengali"
+              - option "Marathi"
+              - option "Telugu"
+              - option "Tamil"
+              - option "Gujarati"
+              - option "Urdu"
+              - option "Kannada"
+              - option "Odia"
+              - option "Malayalam"
+              - option "Punjabi"
+              - option "Bhojpuri"
+              - option "Maithili"
+              - option "Sanskrit"
+              - option "Ahom"
+              - option "Toda"
+              - option "Great Andamanese"
+            - button "Translate" [disabled] [ref=f6e49]
+          - generic [ref=f6e52]:
+            - generic [ref=f6e53]: Translation
+            - paragraph [ref=f6e57]: Translation will appear here...
+  - button "Open Sanskriti AI Chat"
+  - contentinfo [ref=f6e58]:
+    - generic [ref=f6e59]:
+      - generic [ref=f6e60]:
+        - generic [ref=f6e61]:
+          - link "IncredibleIndia" [ref=f6e62] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=f6e67]: Discover the rich heritage, vibrant culture, diverse languages, and stunning landscapes of India. A journey through a land of endless possibilities.
+          - generic [ref=f6e68]:
+            - link [ref=f6e69] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=f6e76] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=f6e81] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=f6e85]:
+          - heading "Explore" [level=4] [ref=f6e86]
+          - list [ref=f6e87]:
+            - listitem [ref=f6e88]:
+              - link "Dance" [ref=f6e89] [cursor=pointer]:
+                - /url: /dance
+            - listitem [ref=f6e90]:
+              - link "Painting" [ref=f6e91] [cursor=pointer]:
+                - /url: /painting
+            - listitem [ref=f6e92]:
+              - link "Languages" [ref=f6e93] [cursor=pointer]:
+                - /url: /languages
+            - listitem [ref=f6e94]:
+              - link "Food" [ref=f6e95] [cursor=pointer]:
+                - /url: /food
+        - generic [ref=f6e96]:
+          - heading "More" [level=4] [ref=f6e97]
+          - list [ref=f6e98]:
+            - listitem [ref=f6e99]:
+              - link "Clothes" [ref=f6e100] [cursor=pointer]:
+                - /url: /clothes
+            - listitem [ref=f6e101]:
+              - link "Festivals" [ref=f6e102] [cursor=pointer]:
+                - /url: /festivals
+            - listitem [ref=f6e103]:
+              - link "About Us" [ref=f6e104] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f6e105]:
+              - link "Contact" [ref=f6e106] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=f6e107]:
+        - paragraph [ref=f6e108]: © 2026 IncredibleIndia. All rights reserved.
+        - generic [ref=f6e109]:
+          - link "Privacy Policy" [ref=f6e110] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=f6e111] [cursor=pointer]:
+            - /url: "#"

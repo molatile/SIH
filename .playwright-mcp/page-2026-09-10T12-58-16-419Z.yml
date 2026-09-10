@@ -1,0 +1,147 @@
+- generic [ref=f9e3]:
+  - banner [ref=f9e4]:
+    - generic [ref=f9e6]:
+      - link "IncredibleIndia" [ref=f9e7] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=f9e12]:
+        - link "Home" [ref=f9e13] [cursor=pointer]:
+          - /url: /
+        - link "Dance" [ref=f9e14] [cursor=pointer]:
+          - /url: /dance
+        - link "Painting" [ref=f9e15] [cursor=pointer]:
+          - /url: /painting
+        - link "Languages" [ref=f9e16] [cursor=pointer]:
+          - /url: /languages
+        - link "Food" [ref=f9e17] [cursor=pointer]:
+          - /url: /food
+        - link "Clothes" [ref=f9e18] [cursor=pointer]:
+          - /url: /clothes
+        - link "Festivals" [ref=f9e19] [cursor=pointer]:
+          - /url: /festivals
+  - main [ref=f9e20]:
+    - generic [ref=f9e21]:
+      - generic [ref=f9e22]:
+        - img "Taj Mahal" [ref=f9e25]
+        - generic [ref=f9e26]:
+          - heading "Discover the Soul of India" [level=1] [ref=f9e27]
+          - paragraph [ref=f9e28]: A journey through diverse cultures, rich history, and breathtaking landscapes.
+          - link "Start Exploring" [ref=f9e30] [cursor=pointer]:
+            - /url: /languages
+      - generic [ref=f9e34]:
+        - heading "Experience India" [level=2] [ref=f9e36]
+        - generic [ref=f9e38]:
+          - link [ref=f9e40] [cursor=pointer]:
+            - /url: /dance
+            - generic [ref=f9e41]:
+              - img "Dance" [ref=f9e43]
+              - generic [ref=f9e44]:
+                - heading "Dance" [level=3] [ref=f9e51]
+                - paragraph [ref=f9e52]: Discover classical and folk dances of India.
+          - link [ref=f9e54] [cursor=pointer]:
+            - /url: /painting
+            - generic [ref=f9e55]:
+              - img "Painting" [ref=f9e57]
+              - generic [ref=f9e58]:
+                - heading "Painting" [level=3] [ref=f9e67]
+                - paragraph [ref=f9e68]: Explore traditional arts and vibrant paintings.
+          - link [ref=f9e70] [cursor=pointer]:
+            - /url: /languages
+            - generic [ref=f9e71]:
+              - img "Languages" [ref=f9e73]
+              - generic [ref=f9e74]:
+                - heading "Languages" [level=3] [ref=f9e79]
+                - paragraph [ref=f9e80]: Dive into the linguistic diversity of India.
+          - link [ref=f9e82] [cursor=pointer]:
+            - /url: /food
+            - generic [ref=f9e83]:
+              - img "Food" [ref=f9e85]
+              - generic [ref=f9e86]:
+                - heading "Food" [level=3] [ref=f9e92]
+                - paragraph [ref=f9e93]: Taste the rich and diverse flavors across regions.
+          - link [ref=f9e95] [cursor=pointer]:
+            - /url: /clothes
+            - generic [ref=f9e96]:
+              - img "Clothes" [ref=f9e98]
+              - generic [ref=f9e99]:
+                - heading "Clothes" [level=3] [ref=f9e104]
+                - paragraph [ref=f9e105]: Discover the vibrant textiles and traditional attire.
+          - link [ref=f9e107] [cursor=pointer]:
+            - /url: /festivals
+            - generic [ref=f9e108]:
+              - img "Festivals" [ref=f9e110]
+              - generic [ref=f9e111]:
+                - heading "Festivals" [level=3] [ref=f9e116]
+                - paragraph [ref=f9e117]: Celebrate the vibrant festivals of the subcontinent.
+      - generic [ref=f9e122]:
+        - generic [ref=f9e123]:
+          - heading "A Symphony of Colors and Traditions" [level=2] [ref=f9e124]
+          - paragraph [ref=f9e125]: India is not just a country; it's a tapestry of diverse cultures, woven together by a shared history and a vibrant present. From the snow-capped Himalayas in the north to the sun-kissed beaches in the south, every region offers a unique flavor, a distinct language, and an unforgettable experience.
+          - link "Learn More" [ref=f9e126] [cursor=pointer]:
+            - /url: /about
+        - generic [ref=f9e127]:
+          - img "Indian Classical Dance" [ref=f9e129]
+          - generic [ref=f9e130]:
+            - heading "5000+" [level=4] [ref=f9e131]
+            - paragraph [ref=f9e132]: Years of History
+  - generic [ref=f9e192]:
+    - generic [ref=f9e193]:
+      - heading "Sanskriti AI" [level=3] [ref=f9e200]
+      - button "Close Chat" [ref=f9e201]
+    - generic [ref=f9e205]:
+      - generic [ref=f9e206]: Namaste! I am Sanskriti AI. How can I guide you through India's rich cultural heritage today?
+      - generic [ref=f9e219]: hello
+      - generic [ref=f9e221]: Apologies, I encountered an error while trying to respond. Please check API keys or try again later.
+    - generic [ref=f9e209]:
+      - textbox "Ask about Indian culture..." [active] [ref=f9e210]
+      - button [disabled] [ref=f9e211]
+  - contentinfo [ref=f9e138]:
+    - generic [ref=f9e139]:
+      - generic [ref=f9e140]:
+        - generic [ref=f9e141]:
+          - link "IncredibleIndia" [ref=f9e142] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=f9e147]: Discover the rich heritage, vibrant culture, diverse languages, and stunning landscapes of India. A journey through a land of endless possibilities.
+          - generic [ref=f9e148]:
+            - link [ref=f9e149] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=f9e156] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=f9e161] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=f9e165]:
+          - heading "Explore" [level=4] [ref=f9e166]
+          - list [ref=f9e167]:
+            - listitem [ref=f9e168]:
+              - link "Dance" [ref=f9e169] [cursor=pointer]:
+                - /url: /dance
+            - listitem [ref=f9e170]:
+              - link "Painting" [ref=f9e171] [cursor=pointer]:
+                - /url: /painting
+            - listitem [ref=f9e172]:
+              - link "Languages" [ref=f9e173] [cursor=pointer]:
+                - /url: /languages
+            - listitem [ref=f9e174]:
+              - link "Food" [ref=f9e175] [cursor=pointer]:
+                - /url: /food
+        - generic [ref=f9e176]:
+          - heading "More" [level=4] [ref=f9e177]
+          - list [ref=f9e178]:
+            - listitem [ref=f9e179]:
+              - link "Clothes" [ref=f9e180] [cursor=pointer]:
+                - /url: /clothes
+            - listitem [ref=f9e181]:
+              - link "Festivals" [ref=f9e182] [cursor=pointer]:
+                - /url: /festivals
+            - listitem [ref=f9e183]:
+              - link "About Us" [ref=f9e184] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f9e185]:
+              - link "Contact" [ref=f9e186] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=f9e187]:
+        - paragraph [ref=f9e188]: © 2026 IncredibleIndia. All rights reserved.
+        - generic [ref=f9e189]:
+          - link "Privacy Policy" [ref=f9e190] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=f9e191] [cursor=pointer]:
+            - /url: "#"
