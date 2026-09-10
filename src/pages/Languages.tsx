@@ -14,6 +14,9 @@ interface Language {
   scriptSample: string;
   description: string;
   thumbnail?: string;
+  status?: string;
+  endangeredStatus?: string;
+  historicalInfo?: string;
 }
 
 interface StateInfo {
@@ -33,7 +36,9 @@ const Languages = () => {
   }, []);
 
   const handleGeographyClick = (geo: any) => {
-    const stateName = geo.properties.NAME_1 || geo.properties.name || geo.properties['hc-key'];
+    const rawStateName = geo.properties.NAME_1 || geo.properties.name || geo.properties['hc-key'];
+    const stateName = rawStateName === 'Orissa' ? 'Odisha' : rawStateName === 'Uttaranchal' ? 'Uttarakhand' : rawStateName;
+    
     // Find all languages for this state
     const stateLanguages = languagesData.filter((lang) => lang.state === stateName);
     
@@ -75,7 +80,8 @@ const Languages = () => {
               <Geographies geography={geoUrl}>
                 {({ geographies }) =>
                   geographies.map((geo) => {
-                    const stateName = geo.properties.NAME_1 || geo.properties.name || geo.properties['hc-key'];
+                    const rawStateName = geo.properties.NAME_1 || geo.properties.name || geo.properties['hc-key'];
+                    const stateName = rawStateName === 'Orissa' ? 'Odisha' : rawStateName === 'Uttaranchal' ? 'Uttarakhand' : rawStateName;
                     const isSelected = selectedStateInfo?.stateName === stateName;
                     
                     return (
@@ -155,6 +161,24 @@ const Languages = () => {
                   {selectedStateInfo.languages.map(lang => (
                     <div key={lang.id} className="border-b border-indigo/10 pb-8 last:border-0 last:pb-0">
                       <h4 className="text-3xl font-yatra text-indigo mb-4">{lang.name}</h4>
+                      
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {lang.status && (
+                          <span className="px-3 py-1 bg-indigo/10 text-indigo rounded-full text-sm font-medium border border-indigo/20">
+                            Status: {lang.status}
+                          </span>
+                        )}
+                        {lang.endangeredStatus && (
+                          <span className={`px-3 py-1 rounded-full text-sm font-medium border ${
+                            lang.endangeredStatus === 'Extinct' ? 'bg-gray-100 text-gray-800 border-gray-200' :
+                            lang.endangeredStatus.includes('Endangered') || lang.endangeredStatus === 'Vulnerable' ? 'bg-red-50 text-red-700 border-red-200' :
+                            'bg-green-50 text-green-700 border-green-200'
+                          }`}>
+                            Conservation: {lang.endangeredStatus}
+                          </span>
+                        )}
+                      </div>
+
                       <div className="flex items-center gap-4 mb-4">
                         <div className="bg-indigo/5 p-4 rounded-xl flex-1 text-center border border-indigo/10">
                           <p className="text-sm text-indigo/70 mb-1">Speakers</p>
@@ -165,15 +189,31 @@ const Languages = () => {
                           <p className="text-3xl text-saffron">{lang.scriptSample}</p>
                         </div>
                       </div>
-                      {lang.thumbnail && (
-                        <div className="mb-4 rounded-xl overflow-hidden shadow-md">
-                          <img src={lang.thumbnail} alt={`${lang.name} language thumbnail`} className="w-full h-48 object-cover" />
-                        </div>
-                      )}
-                      <div className="prose prose-indigo">
+                      <div className="mb-4 rounded-xl overflow-hidden shadow-md">
+                        <img 
+                          src={lang.thumbnail || '/lang/placeholder.jpg'} 
+                          alt={`${lang.name} language thumbnail`} 
+                          className="w-full h-48 object-cover" 
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            if (!target.src.includes('/lang/placeholder.jpg')) {
+                              target.src = '/lang/placeholder.jpg';
+                            }
+                          }}
+                        />
+                      </div>
+                      <div className="prose prose-indigo mb-4">
                         <p className="text-lg leading-relaxed text-indigo/80">
                           {lang.description}
                         </p>
+                        {lang.historicalInfo && (
+                          <div className="mt-3 p-4 bg-saffron/5 rounded-lg border border-saffron/10">
+                            <p className="text-sm leading-relaxed text-indigo/70 italic">
+                              <span className="font-semibold text-indigo not-italic block mb-1">Historical Context</span>
+                              {lang.historicalInfo}
+                            </p>
+                          </div>
+                        )}
                       </div>
                       <div className="mt-4 space-y-3">
                         <button className="w-full btn-primary py-3 text-base font-medium shadow-md">

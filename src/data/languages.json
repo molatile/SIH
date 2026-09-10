@@ -6,7 +6,10 @@
     "speakers": "528 Million",
     "scriptSample": "नमस्ते",
     "description": "An Indo-Aryan language spoken chiefly in North India, and serves as the lingua franca of the Hindi Belt.",
-    "thumbnail": "/lang/hindi.jpeg"
+    "thumbnail": "/lang/hindi.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "An Indo-Aryan language spoken chiefly in North India, and serves as the lingua franca of the Hindi Belt."
   },
   {
     "id": "bengali",
@@ -15,7 +18,10 @@
     "speakers": "97 Million",
     "scriptSample": "নমস্কার",
     "description": "An Indo-Aryan language native to the Bengal region of South Asia.",
-    "thumbnail": "/lang/bengali.jpeg"
+    "thumbnail": "/lang/bengali.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "An Indo-Aryan language native to the Bengal region of South Asia."
   },
   {
     "id": "marathi",
@@ -24,7 +30,10 @@
     "speakers": "83 Million",
     "scriptSample": "नमस्कार",
     "description": "An Indo-Aryan language spoken predominantly by the Marathi people of Maharashtra.",
-    "thumbnail": "/lang/marathi.jpeg"
+    "thumbnail": "/lang/marathi.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "An Indo-Aryan language spoken predominantly by the Marathi people of Maharashtra."
   },
   {
     "id": "telugu",
@@ -33,7 +42,10 @@
     "speakers": "81 Million",
     "scriptSample": "నమస్కారం",
     "description": "A Dravidian language native to the Indian states of Andhra Pradesh and Telangana.",
-    "thumbnail": "/lang/telugu.jpeg"
+    "thumbnail": "/lang/telugu.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "A Dravidian language native to the Indian states of Andhra Pradesh and Telangana."
   },
   {
     "id": "tamil",
@@ -42,7 +54,10 @@
     "speakers": "69 Million",
     "scriptSample": "வணக்கம்",
     "description": "A Dravidian language natively spoken by the Tamil people of South Asia.",
-    "thumbnail": "/lang/tamil.jpeg"
+    "thumbnail": "/lang/tamil.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "A Dravidian language natively spoken by the Tamil people of South Asia."
   },
   {
     "id": "gujarati",
@@ -51,7 +66,10 @@
     "speakers": "55 Million",
     "scriptSample": "નમસ્તે",
     "description": "An Indo-Aryan language native to the Indian state of Gujarat.",
-    "thumbnail": "/lang/gujarati.jpeg"
+    "thumbnail": "/lang/gujarati.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "An Indo-Aryan language native to the Indian state of Gujarat."
   },
   {
     "id": "urdu",
@@ -60,7 +78,10 @@
     "speakers": "50 Million",
     "scriptSample": "آداب",
     "description": "An Indo-Aryan language spoken chiefly in South Asia.",
-    "thumbnail": "/lang/urdu.jpeg"
+    "thumbnail": "/lang/urdu.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "An Indo-Aryan language spoken chiefly in South Asia."
   },
   {
     "id": "kannada",
@@ -69,7 +90,10 @@
     "speakers": "43 Million",
     "scriptSample": "ನಮಸ್ಕಾರ",
     "description": "A Dravidian language spoken predominantly by the people of Karnataka.",
-    "thumbnail": "/lang/kannada.jpeg"
+    "thumbnail": "/lang/kannada.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "A Dravidian language spoken predominantly by the people of Karnataka."
   },
   {
     "id": "odia",
@@ -78,7 +102,10 @@
     "speakers": "34 Million",
     "scriptSample": "ନମସ୍କାର",
     "description": "An Indo-Aryan language spoken in the Indian state of Odisha.",
-    "thumbnail": "/lang/odia.jpeg"
+    "thumbnail": "/lang/odia.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "An Indo-Aryan language spoken in the Indian state of Odisha."
   },
   {
     "id": "malayalam",
@@ -87,7 +114,10 @@
     "speakers": "33 Million",
     "scriptSample": "നമസ്കാരം",
     "description": "A Dravidian language spoken in the Indian state of Kerala.",
-    "thumbnail": "/lang/malayalam.jpeg"
+    "thumbnail": "/lang/malayalam.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "A Dravidian language spoken in the Indian state of Kerala."
   },
   {
     "id": "punjabi",
@@ -96,7 +126,10 @@
     "speakers": "33 Million",
     "scriptSample": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ",
     "description": "An Indo-Aryan language with origins in the Punjab region of the Indian subcontinent.",
-    "thumbnail": "/lang/punjabi.jpeg"
+    "thumbnail": "/lang/punjabi.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "An Indo-Aryan language with origins in the Punjab region of the Indian subcontinent."
   },
   {
     "id": "bhojpuri",
@@ -105,7 +138,10 @@
     "speakers": "50 Million",
     "scriptSample": "प्रणाम",
     "description": "An Indo-Aryan language spoken in the Bhojpur-Purvanchal region of India and the Terai region of Nepal.",
-    "thumbnail": "/lang/bhojpuri.jpeg"
+    "thumbnail": "/lang/bhojpuri.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "An Indo-Aryan language spoken in the Bhojpur-Purvanchal region of India and the Terai region of Nepal."
   },
   {
     "id": "maithili",
@@ -114,6 +150,57 @@
     "speakers": "34 Million",
     "scriptSample": "प्रणाम",
     "description": "An Indo-Aryan language spoken in the Mithila region of India and Nepal.",
-    "thumbnail": "/lang/maithili.jpeg"
+    "thumbnail": "/lang/maithili.jpeg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "An Indo-Aryan language spoken in the Mithila region of India and Nepal."
+  },
+  {
+    "id": "sanskrit",
+    "name": "Sanskrit",
+    "state": "Uttarakhand",
+    "speakers": "25,000",
+    "scriptSample": "संस्कृतम्",
+    "description": "An ancient Indo-Aryan language that is the primary liturgical language of Hinduism.",
+    "status": "Once widely spoken, now mostly liturgical",
+    "endangeredStatus": "Vulnerable",
+    "thumbnail": "/lang/hindi.jpeg",
+    "historicalInfo": "Served as the lingua franca of ancient India."
+  },
+  {
+    "id": "ahom",
+    "name": "Ahom",
+    "state": "Assam",
+    "speakers": "0",
+    "scriptSample": "𑜒𑜑𑜪𑜨",
+    "description": "A Tai language previously spoken by the Ahom people in Assam.",
+    "status": "Once spoken, now extinct as a native language",
+    "endangeredStatus": "Extinct",
+    "thumbnail": "/lang/bengali.jpeg",
+    "historicalInfo": "Was the language of the Ahom Kingdom that ruled the Brahmaputra valley."
+  },
+  {
+    "id": "toda",
+    "name": "Toda",
+    "state": "Tamil Nadu",
+    "speakers": "1,100",
+    "scriptSample": "தோடா",
+    "description": "A Dravidian language spoken by the Toda people in the Nilgiri Hills.",
+    "status": "Still spoken",
+    "endangeredStatus": "Critically Endangered",
+    "thumbnail": "/lang/tamil.jpeg",
+    "historicalInfo": "Known for its unique phonetic system and pastoral vocabulary."
+  },
+  {
+    "id": "great_andamanese",
+    "name": "Great Andamanese",
+    "state": "Andaman and Nicobar",
+    "speakers": "< 10",
+    "scriptSample": "Jero",
+    "description": "A nearly extinct language family of the Andaman Islands.",
+    "status": "Once widely spoken across the islands",
+    "endangeredStatus": "Critically Endangered",
+    "thumbnail": "/lang/odia.jpeg",
+    "historicalInfo": "Represent some of the oldest indigenous languages of the Indian subcontinent."
   }
 ]
