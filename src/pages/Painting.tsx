@@ -14,9 +14,12 @@ export default function Painting() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-yatra text-indigo mb-4">Traditional Indian Art Forms</h1>
-          <p className="text-indigo/80 max-w-2xl mx-auto text-lg">
+          <p className="text-indigo/80 max-w-2xl mx-auto text-lg mb-8">
             Discover the vibrant colors, intricate patterns, and ancient stories preserved in India's diverse painting and craft traditions.
           </p>
+          <Link to="/painting/upload" className="inline-block bg-saffron text-white px-8 py-3 rounded-full font-medium hover:bg-saffron/90 transition-colors shadow-lg">
+            Upload Your Art
+          </Link>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">

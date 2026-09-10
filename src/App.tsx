@@ -6,6 +6,7 @@ import Languages from './pages/Languages';
 import Dance from './pages/Dance';
 import Painting from './pages/Painting';
 import PaintingDetail from './pages/PaintingDetail';
+import UploadPainting from './pages/UploadPainting';
 
 import Clothes from './pages/Clothes';
 import Festivals from './pages/Festivals';
@@ -27,6 +28,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="dance" element={<Dance />} />
           <Route path="painting" element={<Painting />} />
+          <Route path="painting/upload" element={<UploadPainting />} />
           <Route path="painting/:id" element={<PaintingDetail />} />
           <Route path="languages" element={<Languages />} />
           <Route path="food" element={<Food />} />
