@@ -1,0 +1,92 @@
+[
+  {
+    "id": "bihu",
+    "name": "Bihu",
+    "region": "Assam",
+    "image": "/festivals/bihu-assam.png",
+    "info": "A set of three important Assamese festivals marking the agricultural seasons, celebrated with feasts, music, and the energetic Bihu dance.",
+    "history": "Rooted in ancient agrarian traditions, it brings together all communities of Assam regardless of background.",
+    "trivia": "Rongali Bihu, celebrated in April, marks the Assamese New Year and is the most colorful of the three.",
+    "funFact": "During Bihu, the unique 'Pepa' instrument made from a buffalo horn is played, producing an iconic and resonant sound!"
+  },
+  {
+    "id": "durga-puja",
+    "name": "Durga Puja",
+    "region": "West Bengal",
+    "image": "/festivals/durga puja-west bengal.png",
+    "info": "An annual festival revering the Hindu goddess Durga, celebrating her epic victory over the shape-shifting demon Mahishasura.",
+    "history": "It gained prominence during the British era when wealthy Bengali landlords organized grand pujas. Today, it's one of the world's largest public arts festivals.",
+    "trivia": "The grand idols are traditionally crafted using mud from the banks of the river Hooghly.",
+    "funFact": "In 2021, Kolkata's Durga Puja was officially inscribed on the prestigious UNESCO Representative List of the Intangible Cultural Heritage of Humanity!"
+  },
+  {
+    "id": "ganesh-chaturthi",
+    "name": "Ganesh Chaturthi",
+    "region": "Maharashtra",
+    "image": "/festivals/ganesh chaturthi-maharastra.png",
+    "info": "A spectacular 10-day festival celebrating the arrival of Lord Ganesha to earth from Mount Kailash.",
+    "history": "Revitalized by freedom fighter Lokmanya Tilak in 1893 to unite the public and circumvent the British ban on Hindu gatherings.",
+    "trivia": "Massive clay idols of Ganesha are installed publicly and finally immersed in water bodies on Anant Chaturdashi.",
+    "funFact": "Mumbai's 'Lalbaugcha Raja' is the most famous idol, drawing millions of devotees who wait in line for over 24 hours just to get a glimpse!"
+  },
+  {
+    "id": "herath",
+    "name": "Herath (Maha Shivaratri)",
+    "region": "Kashmir",
+    "image": "/festivals/herath-kashmir.png",
+    "info": "The most important festival for Kashmiri Pandits, celebrating the wedding of Lord Shiva and Goddess Parvati.",
+    "history": "Herath means 'Night of Shiva'. It has unique regional rituals that differ significantly from Shivaratri celebrated elsewhere.",
+    "trivia": "Walnuts are soaked in water pots symbolizing the deities, and later distributed as the main 'prasad' (offering).",
+    "funFact": "During Herath, it traditionally snows in Kashmir, which the locals consider an auspicious blessing from Lord Shiva himself!"
+  },
+  {
+    "id": "onam",
+    "name": "Onam",
+    "region": "Kerala",
+    "image": "/festivals/onam-kerela.png",
+    "info": "An annual harvest festival and the most important festival of Kerala. It features grand boat races, tiger dances, and a massive feast.",
+    "history": "Celebrated to honor the legendary, benevolent King Mahabali, whose spirit is said to visit his beloved subjects in Kerala during Onam.",
+    "trivia": "The grand Onam feast, known as 'Onasadya', is a massive vegetarian banquet consisting of over 26 distinct dishes served on a single banana leaf.",
+    "funFact": "The spectacular 'Vallam Kali' (snake boat race) held during Onam involves beautiful boats that are over 100 feet long, rowed by over 100 oarsmen simultaneously!"
+  },
+  {
+    "id": "pongal",
+    "name": "Pongal",
+    "region": "Tamil Nadu",
+    "image": "/festivals/pongal-tamil nadu.png",
+    "info": "A four-day harvest festival dedicated to the Sun God (Surya), celebrating the abundance of the harvest.",
+    "history": "Dating back to the Sangam Age (200 BC to 300 AD), it is one of the oldest continuous festivals in India.",
+    "trivia": "The festival is named after the traditional dish 'Pongal' (sweetened boiled rice), which means 'to boil over'.",
+    "funFact": "When the Pongal dish boils over the pot, families joyously shout 'Pongalo Pongal!' symbolizing prosperity overflowing in their homes!"
+  },
+  {
+    "id": "shigmo",
+    "name": "Shigmo",
+    "region": "Goa",
+    "image": "/festivals/shigmo-goa.png",
+    "info": "A massive spring festival in Goa celebrating the harvest and honoring the local warriors returning from battle.",
+    "history": "While Goa is famous for its Carnival, Shigmo is its deep-rooted traditional Hindu equivalent, blending folk culture with mythology.",
+    "trivia": "It involves massive, vibrant parades in the streets with people performing traditional folk dances like Ghode Modni and Fugdi.",
+    "funFact": "During Shigmo, entire villages participate in painting intricate, massive mythological floats that look like they belong in a fantasy movie!"
+  },
+  {
+    "id": "teej",
+    "name": "Teej",
+    "region": "Rajasthan",
+    "image": "/festivals/teej-rajasthan.png",
+    "info": "A vibrant festival celebrated primarily by women, marking the onset of the monsoon and the union of Lord Shiva and Parvati.",
+    "history": "It revolves around the folklore that Parvati fasted and prayed for 108 lifetimes to finally be accepted by Lord Shiva.",
+    "trivia": "Women dress in bright green attire, apply intricate mehndi (henna), and joyously swing on decorated swings hung from large trees.",
+    "funFact": "A special sweet called 'Ghevar' is exclusively prepared and devoured during this season across Rajasthan!"
+  },
+  {
+    "id": "vaisakhi",
+    "name": "Vaisakhi",
+    "region": "Punjab",
+    "image": "/festivals/vaisakhi-punjab.png",
+    "info": "A historic spring harvest festival that also marks the Sikh New Year and the founding of the Khalsa Panth.",
+    "history": "In 1699, Guru Gobind Singh chose this harvest festival to establish the Khalsa, transforming the Sikh community.",
+    "trivia": "Farmers celebrate by performing the energetic Bhangra dance in the fields to express their joy over the golden wheat harvest.",
+    "funFact": "Nagar Kirtans (street processions) held on Vaisakhi are led by five traditionally dressed Sikhs carrying swords, representing the original 'Panj Pyare' (Beloved Five)!"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "rajasthan-angarakha",
+    "name": "Angarakha & Ghagra Choli",
+    "region": "Rajasthan",
+    "image": "/clothes/angarakha(male) ghagra choli (female)-rajasthan.png",
+    "info": "Traditional Rajasthani attire featuring the Angarakha for men and vibrant Ghagra Choli for women.",
+    "history": "Evolved in the harsh desert climates, these garments use bright colors to contrast with the arid landscape.",
+    "trivia": "The Angarakha means 'body protector' and features a unique asymmetrical tie on the chest.",
+    "funFact": "Rajasthani women's Ghagras often feature heavy mirror work that sparkles beautifully in the desert sun!"
+  },
+  {
+    "id": "maharashtra-dhotar",
+    "name": "Dhotar Kurta & Nauvari Saree",
+    "region": "Maharashtra",
+    "image": "/clothes/dhotar kurta(male) nauvari saree(female) -maharashtra..png",
+    "info": "Classic Maharashtrian wear. Men wear the white Dhotar Kurta, while women drape the 9-yard Nauvari saree.",
+    "history": "The Nauvari drape originated from Maratha women warriors who needed to ride horses while fighting.",
+    "trivia": "Unlike a regular saree, the Nauvari is worn like a dhoti, tucked at the back, eliminating the need for a petticoat.",
+    "funFact": "During the Peshwa era, women would fight alongside men on the battlefield wearing the very same Nauvari drape!"
+  },
+  {
+    "id": "westbengal-dhoti",
+    "name": "Punjabi Kurta & Saree",
+    "region": "West Bengal",
+    "image": "/clothes/dhoti punjabi kurta(males) Saree(female)-west  bengal.png",
+    "info": "The quintessential Bengali look featuring a Dhoti and Punjabi (Kurta) for men, and elegant Sarees for women.",
+    "history": "Handloom weaving of cotton and silk sarees has been a significant part of Bengal's history for centuries.",
+    "trivia": "The men's upper garment is uniquely referred to as a 'Punjabi' in Bengal, not just a 'Kurta'.",
+    "funFact": "The traditional red-and-white 'Lal-Paar' saree is iconic to Bengal and is considered highly auspicious for festivals."
+  },
+  {
+    "id": "assam-gamosa",
+    "name": "Gamosa",
+    "region": "Assam",
+    "image": "/clothes/gamosa-assam.png",
+    "info": "A white rectangular piece of hand-woven cotton cloth with a red border and woven motifs.",
+    "history": "It holds deep cultural significance in Assam, used as a towel, a wrapper, or offered to guests as a sign of respect.",
+    "trivia": "The word 'Gamosa' literally translates to 'something to wipe the body with'.",
+    "funFact": "During the Bihu festival, a beautifully woven Gamosa called 'Bihuwan' is gifted to elders as a token of love and respect."
+  },
+  {
+    "id": "gujarat-kediyu",
+    "name": "Kediyu & Chaniya Choli",
+    "region": "Gujarat",
+    "image": "/clothes/kediyu(men) chaniya choli(female)-gujarat..png",
+    "info": "Vibrant and heavily embroidered festive wear from Gujarat, prominently worn during Garba.",
+    "history": "Rooted in the pastoral communities of Gujarat, the garments evolved with intricate mirror work and embroidery.",
+    "trivia": "The Kediyu is a frilled, gathered top worn by men that uniquely flares out when they spin during dances.",
+    "funFact": "The sheer weight of a traditional Chaniya Choli's embroidery can easily surpass 5-7 kilograms!"
+  },
+  {
+    "id": "punjab-kurta",
+    "name": "Kurta Pajama & Salwar Kameez",
+    "region": "Punjab",
+    "image": "/clothes/kurta pajama(males) salwar kameez(females)-punjab.png",
+    "info": "The comfortable and colorful daily and festive wear of Punjab, featuring loose trousers and tunics.",
+    "history": "The Salwar Kameez was brought to the Indian subcontinent by Muslim invaders and was widely adopted in the Punjab region.",
+    "trivia": "The traditional Punjabi Salwar features beautiful heavy pleating, known as the 'Patiala Salwar'.",
+    "funFact": "The Patiala Salwar was originally designed for the Maharaja of Patiala, but became wildly popular among women!"
+  },
+  {
+    "id": "kerala-mundu",
+    "name": "Mundu & Mundum Neriyathum",
+    "region": "Kerala",
+    "image": "/clothes/mundu(male) mundum neriyathum(female)- kerala..png",
+    "info": "The elegant, minimalist white and gold attire of Kerala. The Mundu is worn by men, and the two-piece Mundum Neriyathum by women.",
+    "history": "The two-piece drape is one of the oldest forms of the Indian saree, surviving in Kerala for centuries.",
+    "trivia": "The pure white color reflects the tropical heat, while the 'Kasavu' (gold border) indicates festive importance.",
+    "funFact": "Traditionally, the gold border on the Mundu was woven with actual pure gold threads by the royal weavers!"
+  },
+  {
+    "id": "karnataka-panche",
+    "name": "Panche & Lungi",
+    "region": "Karnataka",
+    "image": "/clothes/panche lungi-karnataka.png",
+    "info": "Traditional lower garments worn in Karnataka. The Panche is a white wrap, while the Lungi is a casual, colorful tube skirt.",
+    "history": "These wraps are perfectly suited for the humid climate of South India and have been worn since antiquity.",
+    "trivia": "The Panche is typically worn during religious ceremonies and formal occasions, while the Lungi is casual home wear.",
+    "funFact": "In many traditional South Indian households, there's a strict rule: you cannot enter the puja (prayer) room wearing a stitched garment!"
+  },
+  {
+    "id": "kashmir-pheran",
+    "name": "Pheran",
+    "region": "Jammu and Kashmir",
+    "image": "/clothes/pheran-jammu and kashmir.png",
+    "info": "A long, loose winter cloak worn by both men and women in Kashmir.",
+    "history": "Believed to trace back to Central Asian cloaks or introduced by the Mughals to help locals survive the harsh winters.",
+    "trivia": "A traditional Pheran is wide enough to let the wearer carry a 'Kangri' (fire pot) underneath it for warmth.",
+    "funFact": "Despite modern heating, the Pheran remains the most popular winter garment in Kashmir purely due to its Kangri-holding capability!"
+  },
+  {
+    "id": "tamilnadu-veshti",
+    "name": "Veshti & Kanchipuram Saree",
+    "region": "Tamil Nadu",
+    "image": "/clothes/veshti(male) kanchipuram Saree(female)-tamil nadu.png",
+    "info": "Men wear the white Veshti, while women adorn the world-famous, rich silk Kanchipuram sarees.",
+    "history": "Kanchipuram weavers claim descent from Sage Markanda, the master weaver of gods who wove tissue from lotus fiber.",
+    "trivia": "A genuine Kanchipuram saree's border and body are woven separately and then joined with a specialized interlocking stitch.",
+    "funFact": "The silk used in a Kanchipuram saree is so strong that the fabric can easily last for multiple generations!"
+  }
+]

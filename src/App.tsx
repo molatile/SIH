@@ -7,6 +7,10 @@ import Dance from './pages/Dance';
 import Painting from './pages/Painting';
 import PaintingDetail from './pages/PaintingDetail';
 
+import Clothes from './pages/Clothes';
+import Festivals from './pages/Festivals';
+import Food from './pages/Food';
+
 // Placeholder components for other routes
 const Placeholder = ({ title }: { title: string }) => (
   <div className="pt-32 pb-24 min-h-screen flex items-center justify-center">
@@ -25,9 +29,9 @@ function App() {
           <Route path="painting" element={<Painting />} />
           <Route path="painting/:id" element={<PaintingDetail />} />
           <Route path="languages" element={<Languages />} />
-          <Route path="food" element={<Placeholder title="Food" />} />
-          <Route path="clothes" element={<Placeholder title="Clothes" />} />
-          <Route path="festivals" element={<Placeholder title="Festivals" />} />
+          <Route path="food" element={<Food />} />
+          <Route path="clothes" element={<Clothes />} />
+          <Route path="festivals" element={<Festivals />} />
           <Route path="*" element={<Placeholder title="404 Not Found" />} />
         </Route>
       </Routes>

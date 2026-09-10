@@ -1,0 +1,62 @@
+[
+  {
+    "id": "thali",
+    "name": "Traditional Thali",
+    "region": "Pan-India",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Vegetarian_Curry.jpeg",
+    "info": "A massive platter offering a balanced meal with different flavors: sweet, salt, bitter, sour, astringent, and spicy.",
+    "history": "The concept of a Thali is rooted in Ayurveda, which advocates for eating all six tastes in a single meal to maintain a healthy body.",
+    "trivia": "A typical grand Rajasthani or Gujarati Thali can have over 20 different small dishes served in 'katoris' (small bowls)!",
+    "funFact": "In many traditional restaurants, waiters use hand signals to communicate exactly which vegetable or bread needs refilling without making a sound."
+  },
+  {
+    "id": "biryani",
+    "name": "Hyderabadi Biryani",
+    "region": "Telangana",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg/960px-%22Hyderabadi_Dum_Biryani%22.jpg",
+    "info": "A royal, fragrant mixed rice dish made with basmati rice, spices, and heavily marinated meat.",
+    "history": "Originated in the kitchens of the Nizam of Hyderabad, blending Mughal and Iranian cuisine with local Telugu spices.",
+    "trivia": "It is cooked using the 'Dum' method, where the cooking pot is sealed with dough so no steam can escape, trapping all the flavors.",
+    "funFact": "Legend says Biryani was invented by Mumtaz Mahal (the lady for whom the Taj Mahal was built) to feed undernourished soldiers!"
+  },
+  {
+    "id": "dosa",
+    "name": "Masala Dosa",
+    "region": "South India",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Masala_Dosa_2023.jpg/960px-Masala_Dosa_2023.jpg",
+    "info": "A thin, crispy, savory crepe made from a fermented batter of lentils and rice, usually stuffed with a potato curry.",
+    "history": "Traced back to the Udupi region of Karnataka, it is one of the most ancient dishes of South India.",
+    "trivia": "Fermenting the batter overnight naturally breaks down starches and enhances its nutritional value and digestibility.",
+    "funFact": "In 2012, a restaurant in Hyderabad made a Guinness World Record by preparing a Masala Dosa that was a staggering 54 feet long!"
+  },
+  {
+    "id": "chole-bhature",
+    "name": "Chole Bhature",
+    "region": "Punjab",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Chole_Bhature_from_Nagpur.JPG/960px-Chole_Bhature_from_Nagpur.JPG",
+    "info": "A heavy, spicy, and irresistible dish consisting of spicy chickpea curry (Chole) and large, fluffy fried bread (Bhatura).",
+    "history": "It emerged as a staple street food in Northern India, particularly in Delhi and Punjab, post-independence.",
+    "trivia": "It is traditionally served with raw onions, pickles, and a tall glass of cold, sweet Lassi to balance the heavy spices.",
+    "funFact": "Virat Kohli, the famous Indian cricketer, has famously declared Ram's Chole Bhature in Delhi as his ultimate cheat day meal!"
+  },
+  {
+    "id": "samosa",
+    "name": "Samosa",
+    "region": "Pan-India",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg/960px-Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg",
+    "info": "A ubiquitous deep-fried pastry with a savory filling, typically spiced potatoes, onions, and peas.",
+    "history": "Surprisingly, the Samosa did not originate in India! It traveled from the Middle East (where it was called 'Sambosa') via trade routes.",
+    "trivia": "While the potato filling is standard today, historical records show ancient royal samosas were filled with minced meat, nuts, and dry fruits.",
+    "funFact": "It is scientifically designed in a tetrahedral shape so it cooks evenly when deep-fried!"
+  },
+  {
+    "id": "rasgulla",
+    "name": "Rasgulla / Roshogolla",
+    "region": "West Bengal & Odisha",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Rasgulla.jpg/960px-Rasgulla.jpg",
+    "info": "A syrupy dessert made from ball-shaped dumplings of chhena (an Indian cottage cheese) and semolina dough.",
+    "history": "There was a famous, intense legal battle between West Bengal and Odisha over the origin of this sweet, with both getting regional GI tags!",
+    "trivia": "The sweet is extremely spongy; a perfectly made Rasgulla will regain its round shape immediately after being squeezed tightly.",
+    "funFact": "It was traditionally offered to Goddess Lakshmi at the Jagannath Temple to appease her when Lord Jagannath went on his chariot journey without her!"
+  }
+]
