@@ -1,14 +1,79 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { QRCodeSVG } from 'qrcode.react';
 import { useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import paintings from '../data/painting.json';
+
+emailjs.init("ds9LeL17vIjJXdim4");
 
 export default function PaintingDetail() {
   const { id } = useParams<{ id: string }>();
   const paintingIndex = paintings.findIndex(p => p.id === id);
   const painting = paintings[paintingIndex];
   const [currentUrl, setCurrentUrl] = useState('');
+  const [isBuyModalOpen, setIsBuyModalOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: '', email: '', phone: '', address: '', city: '', pincode: ''
+  });
+  const [orderStatus, setOrderStatus] = useState<'idle' | 'loading' | 'success'>('idle');
+
+  const handlePlaceOrder = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setOrderStatus('loading');
+
+    console.log("ENV VARS:");
+    console.log("VITE_EMAILJS_SERVICE_ID:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
+    console.log("VITE_EMAILJS_BUYER_TEMPLATE_ID:", import.meta.env.VITE_EMAILJS_BUYER_TEMPLATE_ID);
+    console.log("VITE_EMAILJS_OWNER_TEMPLATE_ID:", import.meta.env.VITE_EMAILJS_OWNER_TEMPLATE_ID);
+    console.log("VITE_EMAILJS_PUBLIC_KEY:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
+    const orderId = 'SAN-' + Math.floor(100000 + Math.random() * 900000);
+    const templateParams = {
+      order_id: orderId,
+      item_name: painting.name,
+      buyer_name: formData.fullName,
+      buyer_email: formData.email,
+      phone: formData.phone,
+      address: formData.address,
+      city: formData.city,
+      pincode: formData.pincode,
+    };
+
+    try {
+      console.log('Sending BUYER email:', {
+        serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        templateId: import.meta.env.VITE_EMAILJS_BUYER_TEMPLATE_ID,
+        params: JSON.stringify(templateParams),
+        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      });
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_BUYER_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+      
+      console.log('Sending OWNER email:', {
+        serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        templateId: import.meta.env.VITE_EMAILJS_OWNER_TEMPLATE_ID,
+        params: JSON.stringify(templateParams),
+        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      });
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_OWNER_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+      setOrderStatus('success');
+    } catch (error: any) {
+      console.error('Failed to send email:', error);
+      console.error('Error text:', error.text);
+      setOrderStatus('idle');
+      alert('Failed to place order. Please try again.');
+    }
+  };
 
   useEffect(() => {
     setCurrentUrl(`https://sih-two-lyart.vercel.app/painting/${id}`);
@@ -140,6 +205,12 @@ export default function PaintingDetail() {
                   <p className="text-indigo font-medium text-lg">{painting.materials}</p>
                 </div>
               </div>
+              <button
+                onClick={() => setIsBuyModalOpen(true)}
+                className="mt-8 w-full bg-saffron hover:bg-gold text-white font-yatra text-xl py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 relative z-10 block text-center"
+              >
+                Buy This Art
+              </button>
             </div>
 
             <div className="bg-indigo text-ivory p-8 rounded-3xl shadow-xl text-center flex flex-col items-center">
@@ -163,6 +234,90 @@ export default function PaintingDetail() {
         </div>
         
       </div>
+
+      {/* Buy Modal / Drawer */}
+      <AnimatePresence>
+        {isBuyModalOpen && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsBuyModalOpen(false)}
+              className="fixed inset-0 bg-indigo/60 backdrop-blur-sm z-50"
+            />
+            <motion.div
+              initial={{ y: '100%' }}
+              animate={{ y: 0 }}
+              exit={{ y: '100%' }}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+              className="fixed inset-x-0 bottom-0 md:inset-auto md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-full md:max-w-md bg-ivory rounded-t-3xl md:rounded-3xl shadow-2xl z-50 p-6 md:p-8 max-h-[90vh] overflow-y-auto"
+            >
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-3xl font-yatra text-indigo flex items-center">
+                  <span className="bg-saffron w-2 h-6 mr-3 rounded-full block"></span>
+                  Buy {painting.name}
+                </h2>
+                <button onClick={() => setIsBuyModalOpen(false)} className="text-indigo/50 hover:text-saffron transition-colors">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+              </div>
+
+              {orderStatus === 'success' ? (
+                <div className="text-center py-8">
+                  <div className="w-20 h-20 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
+                  </div>
+                  <h3 className="text-2xl font-yatra text-indigo mb-2">Order Placed!</h3>
+                  <p className="text-indigo/70">Check your email for confirmation.</p>
+                </div>
+              ) : (
+                <form onSubmit={handlePlaceOrder} className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-medium text-indigo mb-1">Full Name</label>
+                    <input required type="text" name="fullName" value={formData.fullName} onChange={e => setFormData({ ...formData, fullName: e.target.value })} className="w-full bg-white border border-indigo/20 rounded-xl px-4 py-2 text-indigo focus:outline-none focus:border-saffron focus:ring-1 focus:ring-saffron transition-colors" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-indigo mb-1">Email</label>
+                    <input required type="email" name="email" value={formData.email} onChange={e => setFormData({ ...formData, email: e.target.value })} className="w-full bg-white border border-indigo/20 rounded-xl px-4 py-2 text-indigo focus:outline-none focus:border-saffron focus:ring-1 focus:ring-saffron transition-colors" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-indigo mb-1">Phone Number</label>
+                    <input required type="tel" name="phone" value={formData.phone} onChange={e => setFormData({ ...formData, phone: e.target.value })} className="w-full bg-white border border-indigo/20 rounded-xl px-4 py-2 text-indigo focus:outline-none focus:border-saffron focus:ring-1 focus:ring-saffron transition-colors" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-indigo mb-1">Delivery Address</label>
+                    <textarea required name="address" value={formData.address} onChange={e => setFormData({ ...formData, address: e.target.value })} className="w-full bg-white border border-indigo/20 rounded-xl px-4 py-2 text-indigo focus:outline-none focus:border-saffron focus:ring-1 focus:ring-saffron transition-colors" rows={2} />
+                  </div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-indigo mb-1">City</label>
+                      <input required type="text" name="city" value={formData.city} onChange={e => setFormData({ ...formData, city: e.target.value })} className="w-full bg-white border border-indigo/20 rounded-xl px-4 py-2 text-indigo focus:outline-none focus:border-saffron focus:ring-1 focus:ring-saffron transition-colors" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-indigo mb-1">Pincode</label>
+                      <input required type="text" name="pincode" value={formData.pincode} onChange={e => setFormData({ ...formData, pincode: e.target.value })} className="w-full bg-white border border-indigo/20 rounded-xl px-4 py-2 text-indigo focus:outline-none focus:border-saffron focus:ring-1 focus:ring-saffron transition-colors" />
+                    </div>
+                  </div>
+
+                  <div className="bg-white p-4 rounded-xl border border-indigo/10 flex flex-col items-center justify-center mt-6 shadow-inner">
+                    <img src="/payment-qr.png" alt="UPI QR Code" className="w-32 h-32 mb-2 object-contain" />
+                    <p className="text-sm font-bold text-indigo">Scan to Pay</p>
+                  </div>
+
+                  <button 
+                    type="submit" 
+                    disabled={orderStatus === 'loading'}
+                    className="w-full bg-saffron hover:bg-gold text-white font-yatra text-xl py-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed mt-2 block text-center"
+                  >
+                    {orderStatus === 'loading' ? 'Processing...' : 'Place Order'}
+                  </button>
+                </form>
+              )}
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 }
