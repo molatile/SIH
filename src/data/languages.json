@@ -262,5 +262,65 @@
     "status": "Still spoken",
     "endangeredStatus": "Vulnerable",
     "historicalInfo": "Kharia has faced significant language shift towards dominant regional languages."
+  },
+  {
+    "id": "rajasthani",
+    "name": "Rajasthani",
+    "state": "Rajasthan",
+    "speakers": "50 Million",
+    "scriptSample": "खम्मा घणी",
+    "description": "A macro-language of the Indo-Aryan family spoken primarily in Rajasthan, known for its rich literary tradition and diverse dialects.",
+    "thumbnail": "/lang/placeholder.jpg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "Evolved from the ancient Maru-Gurjar Apabhramsha. Historically written in the Mahajani script, it now primarily uses Devanagari."
+  },
+  {
+    "id": "marwari",
+    "name": "Marwari",
+    "state": "Rajasthan",
+    "speakers": "7.8 Million",
+    "scriptSample": "राम राम सा",
+    "description": "The most widely spoken Rajasthani language, native to the Marwar region of southwestern Rajasthan.",
+    "thumbnail": "/lang/placeholder.jpg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "Has a strong oral tradition and historical significance among merchant communities. Played a key role in trade and commerce."
+  },
+  {
+    "id": "mewari",
+    "name": "Mewari",
+    "state": "Rajasthan",
+    "speakers": "5 Million",
+    "scriptSample": "जय एकलिंगजी",
+    "description": "A prominent dialect of Rajasthani spoken in the Mewar region of Rajasthan, including Udaipur and Chittorgarh.",
+    "thumbnail": "/lang/placeholder.jpg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "Historically significant as the language of the Mewar kingdom, known for its bardic poetry and tales of Rajput resistance."
+  },
+  {
+    "id": "dhundhari",
+    "name": "Dhundhari",
+    "state": "Rajasthan",
+    "speakers": "9 Million",
+    "scriptSample": "राम राम जी",
+    "description": "A major Rajasthani language spoken in the Dhundhar region of northeastern Rajasthan, including Jaipur.",
+    "thumbnail": "/lang/placeholder.jpg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "Historically the language of the Kachhwaha rulers of Amber and Jaipur, known for its distinct grammatical features."
+  },
+  {
+    "id": "harauti",
+    "name": "Harauti",
+    "state": "Rajasthan",
+    "speakers": "3 Million",
+    "scriptSample": "जय श्री कृष्ण",
+    "description": "Spoken in the Hadoti region of southeastern Rajasthan, including Kota, Bundi, Baran, and Jhalawar.",
+    "thumbnail": "/lang/placeholder.jpg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "Bears similarities to both Dhundhari and Malvi, and has a rich heritage of local folklore and poetry."
   }
 ]
