@@ -7,6 +7,7 @@ import Dance from './pages/Dance';
 import Painting from './pages/Painting';
 import PaintingDetail from './pages/PaintingDetail';
 import UploadPainting from './pages/UploadPainting';
+import ArtViewer from './pages/ArtViewer';
 
 import Clothes from './pages/Clothes';
 import Festivals from './pages/Festivals';
@@ -24,6 +25,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <Routes>
+        <Route path="/art/:id" element={<ArtViewer />} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="dance" element={<Dance />} />

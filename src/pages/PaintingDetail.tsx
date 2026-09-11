@@ -76,7 +76,7 @@ export default function PaintingDetail() {
   };
 
   useEffect(() => {
-    setCurrentUrl(`https://sih-two-lyart.vercel.app/painting/${id}`);
+    setCurrentUrl(`https://sih-two-lyart.vercel.app/art/${id}`);
   }, [id]);
 
   if (!painting) {
