@@ -37,8 +37,11 @@ const Languages = () => {
   }, []);
 
   const handleGeographyClick = (geo: any) => {
-    const rawStateName = geo.properties.NAME_1 || geo.properties.name || geo.properties['hc-key'];
-    const stateName = rawStateName === 'Orissa' ? 'Odisha' : rawStateName === 'Uttaranchal' ? 'Uttarakhand' : rawStateName;
+    const rawStateName = geo.properties.st_nm || geo.properties.NAME_1 || geo.properties.name || geo.properties['hc-key'];
+    const stateName = rawStateName === 'Orissa' ? 'Odisha' : 
+                      rawStateName === 'Uttaranchal' ? 'Uttarakhand' : 
+                      rawStateName === 'Andaman and Nicobar Islands' ? 'Andaman and Nicobar' : 
+                      rawStateName;
     
     // Find all languages for this state
     const stateLanguages = languagesData.filter((lang) => lang.state === stateName);
@@ -82,8 +85,11 @@ const Languages = () => {
                 <Geographies geography={geoUrl}>
                   {({ geographies }) =>
                     geographies.map((geo) => {
-                      const rawStateName = geo.properties.NAME_1 || geo.properties.name || geo.properties['hc-key'];
-                      const stateName = rawStateName === 'Orissa' ? 'Odisha' : rawStateName === 'Uttaranchal' ? 'Uttarakhand' : rawStateName;
+                      const rawStateName = geo.properties.st_nm || geo.properties.NAME_1 || geo.properties.name || geo.properties['hc-key'];
+                      const stateName = rawStateName === 'Orissa' ? 'Odisha' : 
+                                        rawStateName === 'Uttaranchal' ? 'Uttarakhand' : 
+                                        rawStateName === 'Andaman and Nicobar Islands' ? 'Andaman and Nicobar' : 
+                                        rawStateName;
                       const isSelected = selectedStateInfo?.stateName === stateName;
                       
                       return (

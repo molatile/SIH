@@ -1,7 +1,7 @@
 import urllib.request
 import json
 
-url = "https://raw.githubusercontent.com/Subhash9325/GeoJson-Data-of-Indian-States/master/Indian_States"
+url = "https://raw.githubusercontent.com/adarshbiradar/maps-geojson/master/india.json"
 response = urllib.request.urlopen(url)
 data = json.loads(response.read())
 
