@@ -202,5 +202,65 @@
     "endangeredStatus": "Critically Endangered",
     "thumbnail": "/lang/odia.jpeg",
     "historicalInfo": "Represent some of the oldest indigenous languages of the Indian subcontinent."
+  },
+  {
+    "id": "santali",
+    "name": "Santali",
+    "state": "Jharkhand",
+    "speakers": "7.6 Million",
+    "scriptSample": "ᱥᱟᱱᱛᱟᱲᱤ",
+    "description": "An Austroasiatic language spoken primarily by the Santal people. It has its own script called Ol Chiki.",
+    "thumbnail": "/lang/placeholder.jpg",
+    "status": "Still spoken",
+    "endangeredStatus": "Safe",
+    "historicalInfo": "One of the most widely spoken tribal languages in India, representing the rich cultural heritage of the Santal tribe."
+  },
+  {
+    "id": "mundari",
+    "name": "Mundari",
+    "state": "Jharkhand",
+    "speakers": "1 Million",
+    "scriptSample": "मुंडारी",
+    "description": "An Austroasiatic language spoken by the Munda people. Efforts are ongoing to preserve it using the Mundari Bani script.",
+    "thumbnail": "/lang/placeholder.jpg",
+    "status": "Still spoken",
+    "endangeredStatus": "Vulnerable",
+    "historicalInfo": "Mundari is central to the identity of the Munda people and features rich oral traditions."
+  },
+  {
+    "id": "kurukh",
+    "name": "Kurukh (Oraon)",
+    "state": "Jharkhand",
+    "speakers": "2 Million",
+    "scriptSample": "कुड़ुख़",
+    "description": "A Dravidian language spoken by the Oraon and Kisan tribal peoples. Tolong Siki is its recognized script.",
+    "thumbnail": "/lang/placeholder.jpg",
+    "status": "Still spoken",
+    "endangeredStatus": "Vulnerable",
+    "historicalInfo": "Unlike many Jharkhand tribal languages which are Austroasiatic, Kurukh is Dravidian."
+  },
+  {
+    "id": "ho",
+    "name": "Ho",
+    "state": "Jharkhand",
+    "speakers": "1 Million",
+    "scriptSample": "𑢹𑣗𑣁𑣜𑣊",
+    "description": "An Austroasiatic language spoken by the Ho people, written in the indigenous Warang Citi script.",
+    "thumbnail": "/lang/placeholder.jpg",
+    "status": "Still spoken",
+    "endangeredStatus": "Vulnerable",
+    "historicalInfo": "The unique Warang Citi script was invented in the 1950s by Lako Bodra to preserve Ho cultural identity."
+  },
+  {
+    "id": "kharia",
+    "name": "Kharia",
+    "state": "Jharkhand",
+    "speakers": "200,000",
+    "scriptSample": "खड़िया",
+    "description": "A Munda (Austroasiatic) language spoken by the Kharia people. It uses Devanagari as it does not have a native script.",
+    "thumbnail": "/lang/placeholder.jpg",
+    "status": "Still spoken",
+    "endangeredStatus": "Vulnerable",
+    "historicalInfo": "Kharia has faced significant language shift towards dominant regional languages."
   }
 ]
