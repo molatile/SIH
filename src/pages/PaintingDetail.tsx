@@ -4,13 +4,16 @@ import { QRCodeSVG } from 'qrcode.react';
 import { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import paintings from '../data/painting.json';
+import { supabase } from '../lib/supabaseClient';
 
 emailjs.init("ds9LeL17vIjJXdim4");
 
 export default function PaintingDetail() {
   const { id } = useParams<{ id: string }>();
-  const paintingIndex = paintings.findIndex(p => p.id === id);
-  const painting = paintings[paintingIndex];
+  const [painting, setPainting] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+
   const [currentUrl, setCurrentUrl] = useState('');
   const [isBuyModalOpen, setIsBuyModalOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -18,20 +21,65 @@ export default function PaintingDetail() {
   });
   const [orderStatus, setOrderStatus] = useState<'idle' | 'loading' | 'success'>('idle');
 
+  useEffect(() => {
+    async function loadPainting() {
+      setLoading(true);
+      setError(false);
+      
+      const localPainting = paintings.find(p => p.id === id);
+      if (localPainting) {
+        setPainting(localPainting);
+        setLoading(false);
+        return;
+      }
+
+      // Try fetching from supabase
+      try {
+        const { data, error } = await supabase
+          .from('artworks')
+          .select('*')
+          .eq('id', id)
+          .single();
+
+        if (error || !data) {
+          setError(true);
+        } else {
+          setPainting({
+            id: data.id,
+            name: data.name,
+            region: data.region,
+            artist: data.artist,
+            origin: data.origin || 'Modern Upload',
+            concept: data.concept || data.description?.substring(0, 150) + '...',
+            materials: data.materials || 'Mixed Media',
+            description: data.description,
+            image: data.image_url,
+            video: data.video_url
+          });
+        }
+      } catch (err) {
+        console.error('Error fetching artwork:', err);
+        setError(true);
+      } finally {
+        setLoading(false);
+      }
+    }
+    
+    if (id) loadPainting();
+  }, [id]);
+
+  useEffect(() => {
+    setCurrentUrl(`${window.location.origin}/painting/${id}`);
+  }, [id]);
+
   const handlePlaceOrder = async (e: React.FormEvent) => {
     e.preventDefault();
     setOrderStatus('loading');
 
-    console.log("ENV VARS:");
-    console.log("VITE_EMAILJS_SERVICE_ID:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
-    console.log("VITE_EMAILJS_BUYER_TEMPLATE_ID:", import.meta.env.VITE_EMAILJS_BUYER_TEMPLATE_ID);
-    console.log("VITE_EMAILJS_OWNER_TEMPLATE_ID:", import.meta.env.VITE_EMAILJS_OWNER_TEMPLATE_ID);
-    console.log("VITE_EMAILJS_PUBLIC_KEY:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-
     const orderId = 'SAN-' + Math.floor(100000 + Math.random() * 900000);
     const templateParams = {
       order_id: orderId,
-      item_name: painting.name,
+      item_name: painting?.name,
       buyer_name: formData.fullName,
       buyer_email: formData.email,
       phone: formData.phone,
@@ -41,12 +89,6 @@ export default function PaintingDetail() {
     };
 
     try {
-      console.log('Sending BUYER email:', {
-        serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        templateId: import.meta.env.VITE_EMAILJS_BUYER_TEMPLATE_ID,
-        params: JSON.stringify(templateParams),
-        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      });
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_BUYER_TEMPLATE_ID,
@@ -54,12 +96,6 @@ export default function PaintingDetail() {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
       
-      console.log('Sending OWNER email:', {
-        serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        templateId: import.meta.env.VITE_EMAILJS_OWNER_TEMPLATE_ID,
-        params: JSON.stringify(templateParams),
-        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      });
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_OWNER_TEMPLATE_ID,
@@ -69,22 +105,22 @@ export default function PaintingDetail() {
       setOrderStatus('success');
     } catch (error: any) {
       console.error('Failed to send email:', error);
-      console.error('Error text:', error.text);
       setOrderStatus('idle');
       alert('Failed to place order. Please try again.');
     }
   };
 
-  useEffect(() => {
-    setCurrentUrl(`https://sih-two-lyart.vercel.app/art/${id}`);
-  }, [id]);
-
-  if (!painting) {
-    return <Navigate to="/painting" />;
+  if (loading) {
+    return (
+      <div className="bg-ivory min-h-screen pt-32 pb-16 flex justify-center items-center">
+        <div className="w-12 h-12 border-4 border-saffron border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    );
   }
 
-  const prevPainting = paintingIndex > 0 ? paintings[paintingIndex - 1] : paintings[paintings.length - 1];
-  const nextPainting = paintingIndex < paintings.length - 1 ? paintings[paintingIndex + 1] : paintings[0];
+  if (error || !painting) {
+    return <Navigate to="/painting" />;
+  }
 
   return (
     <motion.div
@@ -103,14 +139,6 @@ export default function PaintingDetail() {
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
             All Paintings
           </Link>
-          <div className="flex gap-6">
-            <Link to={`/painting/${prevPainting.id}`} className="text-indigo hover:text-saffron transition font-medium flex items-center">
-              &larr; Previous
-            </Link>
-            <Link to={`/painting/${nextPainting.id}`} className="text-indigo hover:text-saffron transition font-medium flex items-center">
-              Next &rarr;
-            </Link>
-          </div>
         </div>
 
         {/* Hero Image */}
@@ -162,25 +190,21 @@ export default function PaintingDetail() {
             </section>
             
             {/* Video Placeholder */}
-            <section>
-              <h2 className="text-4xl font-yatra text-indigo mb-6 flex items-center">
-                <span className="bg-saffron w-2 h-8 mr-3 rounded-full"></span>
-                Art in Motion
-              </h2>
-              <div className="aspect-video bg-indigo/5 rounded-2xl border-2 border-dashed border-indigo/20 flex flex-col items-center justify-center text-indigo/50 relative overflow-hidden group">
-                <div className="absolute inset-0 bg-indigo/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="w-16 h-16 bg-saffron rounded-full flex items-center justify-center text-ivory">
-                    <svg className="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                  </div>
+            {painting.video && (
+              <section>
+                <h2 className="text-4xl font-yatra text-indigo mb-6 flex items-center">
+                  <span className="bg-saffron w-2 h-8 mr-3 rounded-full"></span>
+                  Art in Motion
+                </h2>
+                <div className="aspect-video bg-indigo/5 rounded-2xl border-2 border-indigo/10 flex flex-col items-center justify-center relative overflow-hidden">
+                  <video 
+                    src={painting.video} 
+                    controls 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <svg className="w-20 h-20 mb-4 opacity-40 group-hover:opacity-0 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="font-yatra text-2xl group-hover:opacity-0 transition-opacity">Video Documentary Coming Soon</p>
-                <p className="text-sm mt-2 font-mono opacity-60 group-hover:opacity-0 transition-opacity">{painting.video}</p>
-              </div>
-            </section>
+              </section>
+            )}
           </div>
 
           {/* Sidebar */}
@@ -192,17 +216,17 @@ export default function PaintingDetail() {
               <div className="space-y-6 relative z-10">
                 <div className="border-b border-indigo/10 pb-4">
                   <h4 className="text-xs uppercase tracking-widest text-saffron font-bold mb-2">Artist / Community</h4>
-                  <p className="text-indigo font-medium text-lg">{painting.artist}</p>
+                  <p className="text-indigo font-medium text-lg">{painting.artist || 'Independent Artist'}</p>
                 </div>
                 
                 <div className="border-b border-indigo/10 pb-4">
                   <h4 className="text-xs uppercase tracking-widest text-saffron font-bold mb-2">Origin</h4>
-                  <p className="text-indigo font-medium text-lg">{painting.origin}</p>
+                  <p className="text-indigo font-medium text-lg">{painting.origin || 'Modern'}</p>
                 </div>
                 
                 <div>
                   <h4 className="text-xs uppercase tracking-widest text-saffron font-bold mb-2">Materials Used</h4>
-                  <p className="text-indigo font-medium text-lg">{painting.materials}</p>
+                  <p className="text-indigo font-medium text-lg">{painting.materials || 'Mixed Media'}</p>
                 </div>
               </div>
               <button

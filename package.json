@@ -23,6 +23,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@google/generative-ai": "^0.24.1",
+    "@supabase/supabase-js": "^2.116.0",
     "@types/d3-geo": "^3.1.1",
     "d3-geo": "^3.1.1",
     "framer-motion": "^13.2.0",
