@@ -19,6 +19,9 @@ export default function LanguageTranslator() {
     setIsLoading(true);
     setError('');
     
+    console.log("VITE_GEMINI_API_KEY in handleTranslate:", import.meta.env.VITE_GEMINI_API_KEY);
+
+    
     try {
       const model = genAI.getGenerativeModel({ model: 'gemini-3.6-flash' });
       const prompt = `You are a translator. Translate the given text accurately into the specified Indian language (${targetLang}). Return only the translated text, nothing else.\n\nText: ${sourceText}`;
