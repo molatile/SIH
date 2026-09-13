@@ -20,13 +20,12 @@ export default function LanguageTranslator() {
     setError('');
     
     try {
-      const model = genAI.getGenerativeModel({ 
-        model: 'gemini-3.6-flash',
-        systemInstruction: `You are a helpful translation assistant. Translate the following text into ${targetLang}. Provide ONLY the translated text in the native script of ${targetLang}, without any explanations or quotes.`
-      });
-
-      const response = await model.generateContent(sourceText);
-      const text = response.response.text();
+      const model = genAI.getGenerativeModel({ model: 'gemini-3.6-flash' });
+      const prompt = `You are a translator. Translate the given text accurately into the specified Indian language (${targetLang}). Return only the translated text, nothing else.\n\nText: ${sourceText}`;
+      
+      const result = await model.generateContent(prompt);
+      const response = await result.response;
+      const text = response.text();
       
       setTranslatedText(text);
       

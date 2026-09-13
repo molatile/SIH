@@ -1,0 +1,126 @@
+- generic [ref=f5e3]:
+  - banner [ref=f5e4]:
+    - generic [ref=f5e6]:
+      - link "IncredibleIndia" [ref=f5e7] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=f5e12]:
+        - link "Home" [ref=f5e13] [cursor=pointer]:
+          - /url: /
+        - link "Dance" [ref=f5e14] [cursor=pointer]:
+          - /url: /dance
+        - link "Painting" [ref=f5e15] [cursor=pointer]:
+          - /url: /painting
+        - link "Languages" [ref=f5e16] [cursor=pointer]:
+          - /url: /languages
+        - link "Food" [ref=f5e17] [cursor=pointer]:
+          - /url: /food
+        - link "Clothes" [ref=f5e18] [cursor=pointer]:
+          - /url: /clothes
+        - link "Festivals" [ref=f5e19] [cursor=pointer]:
+          - /url: /festivals
+  - main [ref=f5e20]:
+    - generic [ref=f5e21]:
+      - heading "Linguistic Map of India" [level=2] [ref=f5e26]
+      - generic [ref=f5e32]:
+        - generic [ref=f5e40]:
+          - heading "AI Cultural Translator" [level=2] [ref=f5e41]
+          - paragraph [ref=f5e42]: Translate any text into India's diverse languages using AI.
+        - generic [ref=f5e43]:
+          - generic [ref=f5e44]:
+            - generic [ref=f5e45]: Enter Text
+            - textbox "Type something to translate..." [ref=f5e46]: Hello my friend!
+          - generic [ref=f5e47]:
+            - combobox [ref=f5e48] [cursor=pointer]:
+              - option "Hindi" [selected]
+              - option "Bengali"
+              - option "Marathi"
+              - option "Telugu"
+              - option "Tamil"
+              - option "Gujarati"
+              - option "Urdu"
+              - option "Kannada"
+              - option "Odia"
+              - option "Malayalam"
+              - option "Punjabi"
+              - option "Bhojpuri"
+              - option "Maithili"
+              - option "Sanskrit"
+              - option "Ahom"
+              - option "Toda"
+              - option "Great Andamanese"
+              - option "Santali"
+              - option "Mundari"
+              - option "Kurukh (Oraon)"
+              - option "Ho"
+              - option "Kharia"
+              - option "Rajasthani"
+              - option "Marwari"
+              - option "Mewari"
+              - option "Dhundhari"
+              - option "Harauti"
+              - option "Nyishi"
+              - option "Adi"
+              - option "Monpa"
+              - option "Galo"
+              - option "Meitei (Manipuri)"
+              - option "Thadou"
+              - option "Tangkhul"
+              - option "Konyak"
+              - option "Ao"
+              - option "Angami"
+            - button "Translate" [ref=f5e49]
+          - generic [ref=f5e52]:
+            - generic [ref=f5e53]: Translation
+            - paragraph [ref=f5e159]: Failed to translate. Please try again or check API keys.
+  - button "Open Sanskriti AI Chat" [ref=f5e58]
+  - contentinfo [ref=f5e63]:
+    - generic [ref=f5e64]:
+      - generic [ref=f5e65]:
+        - generic [ref=f5e66]:
+          - link "IncredibleIndia" [ref=f5e67] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=f5e72]: Discover the rich heritage, vibrant culture, diverse languages, and stunning landscapes of India. A journey through a land of endless possibilities.
+          - generic [ref=f5e73]:
+            - link [ref=f5e74] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=f5e81] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=f5e86] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=f5e90]:
+          - heading "Explore" [level=4] [ref=f5e91]
+          - list [ref=f5e92]:
+            - listitem [ref=f5e93]:
+              - link "Dance" [ref=f5e94] [cursor=pointer]:
+                - /url: /dance
+            - listitem [ref=f5e95]:
+              - link "Painting" [ref=f5e96] [cursor=pointer]:
+                - /url: /painting
+            - listitem [ref=f5e97]:
+              - link "Languages" [ref=f5e98] [cursor=pointer]:
+                - /url: /languages
+            - listitem [ref=f5e99]:
+              - link "Food" [ref=f5e100] [cursor=pointer]:
+                - /url: /food
+        - generic [ref=f5e101]:
+          - heading "More" [level=4] [ref=f5e102]
+          - list [ref=f5e103]:
+            - listitem [ref=f5e104]:
+              - link "Clothes" [ref=f5e105] [cursor=pointer]:
+                - /url: /clothes
+            - listitem [ref=f5e106]:
+              - link "Festivals" [ref=f5e107] [cursor=pointer]:
+                - /url: /festivals
+            - listitem [ref=f5e108]:
+              - link "About Us" [ref=f5e109] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f5e110]:
+              - link "Contact" [ref=f5e111] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=f5e112]:
+        - paragraph [ref=f5e113]: © 2026 IncredibleIndia. All rights reserved.
+        - generic [ref=f5e114]:
+          - link "Privacy Policy" [ref=f5e115] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=f5e116] [cursor=pointer]:
+            - /url: "#"
