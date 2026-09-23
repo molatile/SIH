@@ -42,7 +42,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-2 z-50 group">
             <Compass className="w-8 h-8 text-saffron transition-transform group-hover:rotate-45" />
             <span className={`text-2xl font-yatra tracking-wider ${isScrolled || isMobileMenuOpen ? 'text-indigo' : 'text-indigo md:text-ivory'}`}>
-              IncredibleIndia
+              Bharat Darshan
             </span>
           </Link>
 

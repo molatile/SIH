@@ -10,7 +10,7 @@ export default function Footer() {
             <Link to="/" className="flex items-center gap-2 mb-4 group">
               <Compass className="w-8 h-8 text-saffron transition-transform group-hover:rotate-45" />
               <span className="text-2xl font-yatra tracking-wider text-ivory">
-                IncredibleIndia
+                Bharat Darshan
               </span>
             </Link>
             <p className="text-ivory/80 mb-6 max-w-md">
@@ -52,7 +52,7 @@ export default function Footer() {
         
         <div className="border-t border-ivory/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-ivory/60 text-sm">
-            © {new Date().getFullYear()} IncredibleIndia. All rights reserved.
+            © {new Date().getFullYear()} Bharat Darshan. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-ivory/60">
             <a href="#" className="hover:text-saffron transition-colors">Privacy Policy</a>
